@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="aboutForm.Designer.vb">
+      <DependentUpon>aboutForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="aboutForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="book1.Designer.vb">
       <DependentUpon>book1.vb</DependentUpon>
     </Compile>
@@ -115,6 +121,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="book1.resx">
+      <DependentUpon>book1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -142,6 +151,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bgMenu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020-Proton-3S-Centre-Puchong-Lesydear-31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020-Proton-3S-Centre-Puchong-Lesydear-32.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

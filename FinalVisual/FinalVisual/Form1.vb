@@ -12,4 +12,9 @@
         book1.Show()
         Me.Hide()
     End Sub
+
+    Private Sub mnuMenuAbout_Click(sender As Object, e As EventArgs) Handles mnuMenuAbout.Click
+        aboutForm.Show()
+        Me.Hide()
+    End Sub
 End Class

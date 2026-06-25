@@ -22,9 +22,9 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
@@ -53,12 +53,24 @@ Partial Class Form1
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Panel1.Location = New System.Drawing.Point(0, 39)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(776, 51)
         Me.Panel1.TabIndex = 1
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label2.Location = New System.Drawing.Point(176, 10)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(508, 26)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "MALAYSIA'S NO.1 NATIONAL CAR SERVICE CENTRE" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label1
         '
@@ -104,13 +116,13 @@ Partial Class Form1
         'mnuMenuAbout
         '
         Me.mnuMenuAbout.Name = "mnuMenuAbout"
-        Me.mnuMenuAbout.Size = New System.Drawing.Size(216, 30)
+        Me.mnuMenuAbout.Size = New System.Drawing.Size(184, 30)
         Me.mnuMenuAbout.Text = "ABOUT US"
         '
         'mnuMenuExit
         '
         Me.mnuMenuExit.Name = "mnuMenuExit"
-        Me.mnuMenuExit.Size = New System.Drawing.Size(216, 30)
+        Me.mnuMenuExit.Size = New System.Drawing.Size(184, 30)
         Me.mnuMenuExit.Text = "EXIT"
         '
         'STAFFLOGINToolStripMenuItem1
@@ -128,7 +140,8 @@ Partial Class Form1
         Me.btnBook.FlatAppearance.BorderSize = 0
         Me.btnBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBook.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBook.Location = New System.Drawing.Point(275, 356)
+        Me.btnBook.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnBook.Location = New System.Drawing.Point(258, 355)
         Me.btnBook.Name = "btnBook"
         Me.btnBook.Size = New System.Drawing.Size(246, 37)
         Me.btnBook.TabIndex = 3
@@ -139,7 +152,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImage = Global.FinalVisual.My.Resources.Resources._2020_Proton_3S_Centre_Puchong_Lesydear_32
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(772, 447)
         Me.Controls.Add(Me.btnBook)
@@ -167,6 +180,7 @@ Partial Class Form1
     Friend WithEvents MENUToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents mnuMenuAbout As ToolStripMenuItem
     Friend WithEvents STAFFLOGINToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents btnBook As Button
     Friend WithEvents mnuMenuExit As ToolStripMenuItem
+    Friend WithEvents btnBook As Button
+    Friend WithEvents Label2 As Label
 End Class
