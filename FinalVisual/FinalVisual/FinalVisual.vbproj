@@ -201,5 +201,11 @@
   <ItemGroup>
     <None Include="Resources\2020-Proton-3S-Centre-Puchong-Lesydear-32.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e3e1281f387cb3c2547e77209106732b %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8c430db504925480c7433c228ebc60a0.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
