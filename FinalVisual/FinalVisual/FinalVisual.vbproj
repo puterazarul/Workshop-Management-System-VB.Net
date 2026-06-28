@@ -85,6 +85,12 @@
     <Compile Include="book1.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="book2.Designer.vb">
+      <DependentUpon>book2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="book2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
