@@ -155,6 +155,9 @@
     <EmbeddedResource Include="book1.resx">
       <DependentUpon>book1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="book2.resx">
+      <DependentUpon>book2.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -206,6 +209,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\8c430db504925480c7433c228ebc60a0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-06-29 at 1.34.37 AM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-06-29 at 2.16.09 AM.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
