@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form5
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,14 +20,14 @@ Partial Class Form5
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.dgvInventory = New System.Windows.Forms.DataGridView()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtPartId = New System.Windows.Forms.TextBox()
+        Me.txtPartID = New System.Windows.Forms.TextBox()
         Me.txtPartName = New System.Windows.Forms.TextBox()
         Me.txtQuantity = New System.Windows.Forms.TextBox()
         Me.txtPrice = New System.Windows.Forms.TextBox()
@@ -36,15 +36,10 @@ Partial Class Form5
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.colID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colQty = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colPrice = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colStatus = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.btnUpdateStock = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
-        CType(Me.dgvInventory, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -75,15 +70,14 @@ Partial Class Form5
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "INVENTORY MANAGEMENT"
         '
-        'dgvInventory
+        'DataGridView1
         '
-        Me.dgvInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvInventory.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colID, Me.colName, Me.colQty, Me.colPrice, Me.colStatus})
-        Me.dgvInventory.Location = New System.Drawing.Point(392, 135)
-        Me.dgvInventory.Name = "dgvInventory"
-        Me.dgvInventory.RowTemplate.Height = 24
-        Me.dgvInventory.Size = New System.Drawing.Size(543, 188)
-        Me.dgvInventory.TabIndex = 4
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(273, 117)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowTemplate.Height = 24
+        Me.DataGridView1.Size = New System.Drawing.Size(713, 147)
+        Me.DataGridView1.TabIndex = 4
         '
         'Label2
         '
@@ -94,12 +88,12 @@ Partial Class Form5
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Part ID :"
         '
-        'txtPartId
+        'txtPartID
         '
-        Me.txtPartId.Location = New System.Drawing.Point(145, 157)
-        Me.txtPartId.Name = "txtPartId"
-        Me.txtPartId.Size = New System.Drawing.Size(100, 22)
-        Me.txtPartId.TabIndex = 6
+        Me.txtPartID.Location = New System.Drawing.Point(145, 157)
+        Me.txtPartID.Name = "txtPartID"
+        Me.txtPartID.Size = New System.Drawing.Size(100, 22)
+        Me.txtPartID.TabIndex = 6
         '
         'txtPartName
         '
@@ -165,56 +159,31 @@ Partial Class Form5
         Me.Label6.TabIndex = 14
         Me.Label6.Text = "Supplier"
         '
-        'Button1
+        'btnUpdateStock
         '
-        Me.Button1.Location = New System.Drawing.Point(63, 383)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(80, 52)
-        Me.Button1.TabIndex = 15
-        Me.Button1.Text = "Update Stock"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnUpdateStock.Location = New System.Drawing.Point(63, 383)
+        Me.btnUpdateStock.Name = "btnUpdateStock"
+        Me.btnUpdateStock.Size = New System.Drawing.Size(80, 52)
+        Me.btnUpdateStock.TabIndex = 15
+        Me.btnUpdateStock.Text = "Update Stock"
+        Me.btnUpdateStock.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnClear
         '
-        Me.Button3.Location = New System.Drawing.Point(184, 383)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(81, 52)
-        Me.Button3.TabIndex = 16
-        Me.Button3.Text = "Clear"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'colID
-        '
-        Me.colID.HeaderText = "Part ID"
-        Me.colID.Name = "colID"
-        '
-        'colName
-        '
-        Me.colName.HeaderText = "Part Name"
-        Me.colName.Name = "colName"
-        '
-        'colQty
-        '
-        Me.colQty.HeaderText = "Quantity"
-        Me.colQty.Name = "colQty"
-        '
-        'colPrice
-        '
-        Me.colPrice.HeaderText = "Price"
-        Me.colPrice.Name = "colPrice"
-        '
-        'colStatus
-        '
-        Me.colStatus.HeaderText = "Status"
-        Me.colStatus.Name = "colStatus"
+        Me.btnClear.Location = New System.Drawing.Point(184, 383)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(81, 52)
+        Me.btnClear.TabIndex = 16
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = True
         '
         'Form5
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1065, 540)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnClear)
+        Me.Controls.Add(Me.btnUpdateStock)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -223,15 +192,15 @@ Partial Class Form5
         Me.Controls.Add(Me.txtPrice)
         Me.Controls.Add(Me.txtQuantity)
         Me.Controls.Add(Me.txtPartName)
-        Me.Controls.Add(Me.txtPartId)
+        Me.Controls.Add(Me.txtPartID)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.dgvInventory)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "Form5"
         Me.Text = "Form5"
         Me.Panel1.ResumeLayout(False)
-        CType(Me.dgvInventory, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -239,9 +208,9 @@ Partial Class Form5
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Button2 As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents dgvInventory As DataGridView
+    Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Label2 As Label
-    Friend WithEvents txtPartId As TextBox
+    Friend WithEvents txtPartID As TextBox
     Friend WithEvents txtPartName As TextBox
     Friend WithEvents txtQuantity As TextBox
     Friend WithEvents txtPrice As TextBox
@@ -250,11 +219,6 @@ Partial Class Form5
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents colID As DataGridViewTextBoxColumn
-    Friend WithEvents colName As DataGridViewTextBoxColumn
-    Friend WithEvents colQty As DataGridViewTextBoxColumn
-    Friend WithEvents colPrice As DataGridViewTextBoxColumn
-    Friend WithEvents colStatus As DataGridViewTextBoxColumn
+    Friend WithEvents btnUpdateStock As Button
+    Friend WithEvents btnClear As Button
 End Class
