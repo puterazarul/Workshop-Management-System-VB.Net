@@ -18,4 +18,18 @@
         Form1.Show()
         Me.Hide()
     End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txtName.TextChanged
+
+    End Sub
+
+    Private Sub btnService_Click(sender As Object, e As EventArgs) Handles btnService.Click
+        book2.lblName.Text = txtName.Text
+        book2.lblPhone.Text = txtPhone.Text
+        book2.lblPlate.Text = txtPlate.Text
+        book2.lblCarType.Text = cmbCarType.Text
+
+        book2.Show()
+        Me.Hide()
+    End Sub
 End Class

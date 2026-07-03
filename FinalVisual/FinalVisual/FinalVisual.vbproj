@@ -240,6 +240,9 @@
     <None Include="Resources\WhatsApp Image 2026-06-29 at 2.16.09 AM.jpeg" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Booking.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Workshop.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

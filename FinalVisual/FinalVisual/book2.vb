@@ -1,9 +1,60 @@
-﻿Public Class book2
-    Private Sub Button2_Click(sender As Object, e As EventArgs)
+﻿Imports System.Data.OleDb
+Public Class book2
+    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+        Dim total As Integer = 0
+
+        If chkOil.Checked Then total += 80
+        If chkAlign.Checked Then total += 30
+        If chkCarwash.Checked Then total += 10
+        If chkBrake.Checked Then total += 50
+        If chkCoolant.Checked Then total += 60
+        If chkGas.Checked Then total += 40
+        If chkOBD.Checked Then total += 100
+        If chkTint.Checked Then total += 150
+
+        txtTotalPrice.Text = total
+    End Sub
+
+    Private Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
+
+        Dim conn As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\User\Desktop\Booking.accdb")
+
+        Dim service As String = ""
+
+        If chkOil.Checked Then service &= "Oil Change, "
+        If chkAlign.Checked Then service &= "Alignment, "
+        If chkCarwash.Checked Then service &= "Carwash, "
+        If chkBrake.Checked Then service &= "Brake Pads, "
+        If chkCoolant.Checked Then service &= "Coolant Flush, "
+        If chkGas.Checked Then service &= "Gas Refill, "
+        If chkOBD.Checked Then service &= "OBD Scanner, "
+        If chkTint.Checked Then service &= "Tint, "
+
+        Dim cmd As New OleDbCommand("
+INSERT INTO Booking 
+([Name],[Phone],[PlateNo],[CarType],[BookingDate],[Session],[Service],[Price]) 
+VALUES 
+(@n,@p,@plate,@car,@date,@session,@service,@price)", conn)
+
+        cmd.Parameters.AddWithValue("@n", lblName.Text)
+        cmd.Parameters.AddWithValue("@p", lblPhone.Text)
+        cmd.Parameters.AddWithValue("@plate", lblPlate.Text)
+        cmd.Parameters.AddWithValue("@car", lblCarType.Text)
+        cmd.Parameters.AddWithValue("@date", dtpDate.Text)
+        cmd.Parameters.AddWithValue("@session", cmbSession.Text)
+        cmd.Parameters.AddWithValue("@service", service)
+        cmd.Parameters.AddWithValue("@price", txtTotalPrice.Text)
+
+        conn.Open()
+        cmd.ExecuteNonQuery()
+        conn.Close()
+
+        MsgBox("Booking Saved Successfully!")
 
     End Sub
 
-    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
-
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
+        Form4.Show()
+        Me.Hide()
     End Sub
 End Class

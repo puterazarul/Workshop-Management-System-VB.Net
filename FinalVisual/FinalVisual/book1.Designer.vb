@@ -28,15 +28,15 @@ Partial Class book1
         Me.mnuBack = New System.Windows.Forms.ToolStripMenuItem()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtName = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtPhone = New System.Windows.Forms.TextBox()
         Me.btnService = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txtPlate = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cmbCarType = New System.Windows.Forms.ComboBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -96,12 +96,12 @@ Partial Class book1
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "CAR SERVICE APPOINTMENT"
         '
-        'TextBox1
+        'txtName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(539, 106)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(218, 22)
-        Me.TextBox1.TabIndex = 3
+        Me.txtName.Location = New System.Drawing.Point(539, 106)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(218, 22)
+        Me.txtName.TabIndex = 3
         '
         'Label2
         '
@@ -125,12 +125,12 @@ Partial Class book1
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Phone Number"
         '
-        'TextBox2
+        'txtPhone
         '
-        Me.TextBox2.Location = New System.Drawing.Point(539, 170)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(218, 22)
-        Me.TextBox2.TabIndex = 6
+        Me.txtPhone.Location = New System.Drawing.Point(539, 170)
+        Me.txtPhone.Name = "txtPhone"
+        Me.txtPhone.Size = New System.Drawing.Size(218, 22)
+        Me.txtPhone.TabIndex = 6
         '
         'btnService
         '
@@ -154,12 +154,12 @@ Partial Class book1
         Me.Label4.TabIndex = 8
         Me.Label4.Text = "Car"
         '
-        'TextBox4
+        'txtPlate
         '
-        Me.TextBox4.Location = New System.Drawing.Point(539, 305)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(218, 22)
-        Me.TextBox4.TabIndex = 10
+        Me.txtPlate.Location = New System.Drawing.Point(539, 305)
+        Me.txtPlate.Name = "txtPlate"
+        Me.txtPlate.Size = New System.Drawing.Size(218, 22)
+        Me.txtPlate.TabIndex = 10
         '
         'Label5
         '
@@ -172,14 +172,14 @@ Partial Class book1
         Me.Label5.TabIndex = 11
         Me.Label5.Text = "Plate Number"
         '
-        'ComboBox1
+        'cmbCarType
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"IRIZ", "PREVE/SUPRIMA", "PERSONA", "SAGA", "S70", "X50", "X70", "X90", "ALZA", "ARUZ", "ATIVA", "AXIA", "BEZZA", "MYVI"})
-        Me.ComboBox1.Location = New System.Drawing.Point(539, 233)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(218, 24)
-        Me.ComboBox1.TabIndex = 12
+        Me.cmbCarType.FormattingEnabled = True
+        Me.cmbCarType.Items.AddRange(New Object() {"IRIZ", "PREVE/SUPRIMA", "PERSONA", "SAGA", "S70", "X50", "X70", "X90", "ALZA", "ARUZ", "ATIVA", "AXIA", "BEZZA", "MYVI"})
+        Me.cmbCarType.Location = New System.Drawing.Point(539, 233)
+        Me.cmbCarType.Name = "cmbCarType"
+        Me.cmbCarType.Size = New System.Drawing.Size(218, 24)
+        Me.cmbCarType.TabIndex = 12
         '
         'PictureBox1
         '
@@ -196,15 +196,15 @@ Partial Class book1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cmbCarType)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.txtPlate)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.btnService)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.txtPhone)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
@@ -228,13 +228,13 @@ Partial Class book1
     Friend WithEvents mnuBack As ToolStripMenuItem
     Friend WithEvents lblTitle As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtName As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtPhone As TextBox
     Friend WithEvents btnService As Button
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents txtPlate As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cmbCarType As ComboBox
 End Class
