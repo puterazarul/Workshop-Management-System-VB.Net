@@ -3,8 +3,8 @@ Public Class Form4
 
 
     Private Sub btnSearch_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
-        Dim conn As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\User\Desktop\Booking.accdb")
-
+        Dim connString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\UserDB.accdb;"
+        Dim conn As New OleDbConnection(connString)
         Dim cmd As New OleDbCommand("SELECT * FROM Booking WHERE PlateNo=@plate", conn)
         cmd.Parameters.AddWithValue("@plate", txtSearchPlate.Text)
 
@@ -40,5 +40,10 @@ Public Class Form4
 
         conn.Close()
 
+    End Sub
+
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        menuForm.Show()
+        Me.Close()
     End Sub
 End Class

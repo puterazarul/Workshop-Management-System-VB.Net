@@ -32,9 +32,7 @@ Partial Class Form1
         Me.mnuMenuAbout = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuMenuExit = New System.Windows.Forms.ToolStripMenuItem()
         Me.STAFFLOGINToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.btnBook = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -99,7 +97,7 @@ Partial Class Form1
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.Black
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MENUToolStripMenuItem, Me.STAFFLOGINToolStripMenuItem1, Me.BToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MENUToolStripMenuItem, Me.STAFFLOGINToolStripMenuItem1})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(814, 33)
@@ -135,12 +133,6 @@ Partial Class Form1
         Me.STAFFLOGINToolStripMenuItem1.Size = New System.Drawing.Size(88, 29)
         Me.STAFFLOGINToolStripMenuItem1.Text = "LOG IN"
         '
-        'BToolStripMenuItem
-        '
-        Me.BToolStripMenuItem.Name = "BToolStripMenuItem"
-        Me.BToolStripMenuItem.Size = New System.Drawing.Size(30, 29)
-        Me.BToolStripMenuItem.Text = "b"
-        '
         'btnBook
         '
         Me.btnBook.BackColor = System.Drawing.Color.Transparent
@@ -156,15 +148,6 @@ Partial Class Form1
         Me.btnBook.Text = "Book a Service"
         Me.btnBook.UseVisualStyleBackColor = False
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(66, 204)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -172,7 +155,6 @@ Partial Class Form1
         Me.BackgroundImage = Global.FinalVisual.My.Resources.Resources._2020_Proton_3S_Centre_Puchong_Lesydear_32
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(772, 447)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnBook)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel2)
@@ -201,6 +183,4 @@ Partial Class Form1
     Friend WithEvents mnuMenuExit As ToolStripMenuItem
     Friend WithEvents btnBook As Button
     Friend WithEvents Label2 As Label
-    Friend WithEvents BToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents Button1 As Button
 End Class

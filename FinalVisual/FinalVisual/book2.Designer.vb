@@ -28,8 +28,8 @@ Partial Class book2
         Me.lblPlate = New System.Windows.Forms.Label()
         Me.lblName = New System.Windows.Forms.Label()
         Me.btnCalculate = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnBack = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
         Me.btnConfirm = New System.Windows.Forms.Button()
         Me.txtTotalPrice = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -61,8 +61,8 @@ Partial Class book2
         Me.GroupBox1.Controls.Add(Me.lblPlate)
         Me.GroupBox1.Controls.Add(Me.lblName)
         Me.GroupBox1.Controls.Add(Me.btnCalculate)
-        Me.GroupBox1.Controls.Add(Me.Button3)
-        Me.GroupBox1.Controls.Add(Me.Button2)
+        Me.GroupBox1.Controls.Add(Me.btnBack)
+        Me.GroupBox1.Controls.Add(Me.btnExit)
         Me.GroupBox1.Controls.Add(Me.btnConfirm)
         Me.GroupBox1.Controls.Add(Me.txtTotalPrice)
         Me.GroupBox1.Controls.Add(Me.Label4)
@@ -139,31 +139,31 @@ Partial Class book2
         Me.btnCalculate.Text = "Calculate"
         Me.btnCalculate.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btnBack
         '
-        Me.Button3.BackColor = System.Drawing.Color.Gray
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(243, 374)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(120, 49)
-        Me.Button3.TabIndex = 17
-        Me.Button3.Text = "Back"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnBack.BackColor = System.Drawing.Color.Gray
+        Me.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBack.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBack.Location = New System.Drawing.Point(243, 374)
+        Me.btnBack.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(120, 49)
+        Me.btnBack.TabIndex = 17
+        Me.btnBack.Text = "Back"
+        Me.btnBack.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btnExit
         '
-        Me.Button2.BackColor = System.Drawing.Color.Red
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(361, 373)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(120, 49)
-        Me.Button2.TabIndex = 16
-        Me.Button2.Text = "Exit"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnExit.BackColor = System.Drawing.Color.Red
+        Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnExit.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExit.Location = New System.Drawing.Point(361, 373)
+        Me.btnExit.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(120, 49)
+        Me.btnExit.TabIndex = 16
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = False
         '
         'btnConfirm
         '
@@ -414,8 +414,8 @@ Partial Class book2
     Friend WithEvents dtpDate As DateTimePicker
     Friend WithEvents Label3 As Label
     Friend WithEvents btnCalculate As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnBack As Button
+    Friend WithEvents btnExit As Button
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents lblCarType As Label
     Friend WithEvents lblPhone As Label

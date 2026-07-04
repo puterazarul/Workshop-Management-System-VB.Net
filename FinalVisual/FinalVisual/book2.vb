@@ -17,7 +17,7 @@ Public Class book2
 
     Private Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
 
-        Dim conn As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\User\Desktop\Booking.accdb")
+        Dim conn As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\UserDB.accdb;")
 
         Dim service As String = ""
 
@@ -56,5 +56,15 @@ VALUES
     Private Sub Button1_Click(sender As Object, e As EventArgs)
         Form4.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Form1.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+        book1.Show()
+        Me.Close()
     End Sub
 End Class

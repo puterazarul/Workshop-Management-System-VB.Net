@@ -16,7 +16,7 @@
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
@@ -114,6 +114,12 @@
     <Compile Include="book2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="forgetPassword.Designer.vb">
+      <DependentUpon>forgetPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forgetPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +179,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="registerForm.Designer.vb">
+      <DependentUpon>registerForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="registerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="book1.resx">
@@ -180,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="book2.resx">
       <DependentUpon>book2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgetPassword.resx">
+      <DependentUpon>forgetPassword.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
@@ -193,6 +208,9 @@
     <EmbeddedResource Include="loginForm.resx">
       <DependentUpon>loginForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="menuForm.resx">
+      <DependentUpon>menuForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
     </EmbeddedResource>
@@ -204,6 +222,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registerForm.resx">
+      <DependentUpon>registerForm.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
