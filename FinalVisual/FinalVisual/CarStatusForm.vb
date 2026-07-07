@@ -35,42 +35,21 @@ Public Class CarStatusForm
         End Using
     End Sub
 
-    Private Sub JobStatusForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-            LoadAllBookings()
-        End Sub
-
-    Private Sub LoadAllBookings()
-        Dim connString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\UserDB.accdb;"
-        Using conn As New OleDbConnection(connString)
-            Dim sql As String = "SELECT ID, Name, Phone, PlateNo, CarType, BookingDate, Session, Service, Price FROM tblBooking"
-            Using cmd As New OleDbCommand(sql, conn)
-                Try
-                    conn.Open()
-                    Dim dt As New DataTable()
-                    Using rdr As OleDbDataReader = cmd.ExecuteReader()
-                        dt.Load(rdr)
-                    End Using
-                    DataGridView1.DataSource = dt
-                Catch ex As Exception
-                    MessageBox.Show("Error loading bookings: " & ex.Message)
-                End Try
-            End Using
-        End Using
-    End Sub
-
-
-    Dim con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.16.0;Data Source=Workshop.accdb;")
-    Sub DisplayData()
-
-        Dim da As New OleDbDataAdapter("SELECT * FROM Inventory", con)
-        Dim dt As New DataTable
-
-        da.Fill(dt)
-
-        DataGridView1.DataSource = dt
-
+    Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs)
 
     End Sub
 
+    Private Sub lblPlate_Click(sender As Object, e As EventArgs) Handles lblPlate.Click
 
+    End Sub
+
+    Private Sub mnuHome_Click(sender As Object, e As EventArgs) Handles mnuHome.Click
+        Form1.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub mnuBack_Click(sender As Object, e As EventArgs) Handles mnuBack.Click
+        custMenuForm.Show()
+        Me.Hide()
+    End Sub
 End Class

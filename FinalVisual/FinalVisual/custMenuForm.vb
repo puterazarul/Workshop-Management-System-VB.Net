@@ -28,4 +28,19 @@
         CarStatusForm.Show()
         Me.Hide()
     End Sub
+
+    Private Sub mnuFileHome_Click(sender As Object, e As EventArgs) Handles mnuFileHome.Click
+        Form1.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub mnuFileNew_Click(sender As Object, e As EventArgs) Handles mnuFileNew.Click
+        registerForm.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub mnuFileLogin_Click(sender As Object, e As EventArgs) Handles mnuFileLogin.Click
+        loginForm.Show()
+        Me.Hide()
+    End Sub
 End Class

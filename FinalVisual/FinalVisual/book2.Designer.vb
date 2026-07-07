@@ -205,7 +205,7 @@ Partial Class book2
         '
         Me.cmbSession.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbSession.FormattingEnabled = True
-        Me.cmbSession.Items.AddRange(New Object() {"pagi", "petang", "malam"})
+        Me.cmbSession.Items.AddRange(New Object() {"PAGI", "PETANG", "NIGHT"})
         Me.cmbSession.Location = New System.Drawing.Point(243, 122)
         Me.cmbSession.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbSession.Name = "cmbSession"

@@ -25,21 +25,29 @@ Partial Class CarStatusForm
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuHome = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuBack = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.lblCar = New System.Windows.Forms.Label()
-        Me.lblPrice = New System.Windows.Forms.Label()
-        Me.lblService = New System.Windows.Forms.Label()
-        Me.lblDate = New System.Windows.Forms.Label()
-        Me.lblPlate = New System.Windows.Forms.Label()
-        Me.lblName = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtSearchPlate = New System.Windows.Forms.TextBox()
         Me.btnSearch = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblName = New System.Windows.Forms.Label()
+        Me.lblCar = New System.Windows.Forms.Label()
+        Me.lblPlate = New System.Windows.Forms.Label()
+        Me.lblPrice = New System.Windows.Forms.Label()
+        Me.lblDate = New System.Windows.Forms.Label()
+        Me.lblService = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -53,127 +61,216 @@ Partial Class CarStatusForm
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.BackColor = System.Drawing.Color.Black
+        Me.MenuStrip1.BackColor = System.Drawing.Color.Transparent
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(808, 46)
+        Me.MenuStrip1.Size = New System.Drawing.Size(808, 40)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'ToolStripMenuItem1
         '
-        Me.ToolStripMenuItem1.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuHome, Me.mnuBack})
+        Me.ToolStripMenuItem1.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(62, 42)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(54, 36)
         Me.ToolStripMenuItem1.Text = "///"
+        '
+        'mnuHome
+        '
+        Me.mnuHome.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mnuHome.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.mnuHome.Name = "mnuHome"
+        Me.mnuHome.Size = New System.Drawing.Size(216, 36)
+        Me.mnuHome.Text = "HOME"
+        '
+        'mnuBack
+        '
+        Me.mnuBack.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mnuBack.Name = "mnuBack"
+        Me.mnuBack.Size = New System.Drawing.Size(216, 36)
+        Me.mnuBack.Text = "BACK"
         '
         'Panel2
         '
-        Me.Panel2.Controls.Add(Me.DataGridView1)
-        Me.Panel2.Controls.Add(Me.lblCar)
-        Me.Panel2.Controls.Add(Me.lblPrice)
-        Me.Panel2.Controls.Add(Me.lblService)
-        Me.Panel2.Controls.Add(Me.lblDate)
-        Me.Panel2.Controls.Add(Me.lblPlate)
-        Me.Panel2.Controls.Add(Me.lblName)
         Me.Panel2.Controls.Add(Me.Label1)
         Me.Panel2.Controls.Add(Me.txtSearchPlate)
         Me.Panel2.Controls.Add(Me.btnSearch)
+        Me.Panel2.Controls.Add(Me.Panel3)
         Me.Panel2.Location = New System.Drawing.Point(12, 48)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(776, 390)
         Me.Panel2.TabIndex = 1
         '
-        'lblCar
-        '
-        Me.lblCar.AutoSize = True
-        Me.lblCar.Location = New System.Drawing.Point(179, 315)
-        Me.lblCar.Name = "lblCar"
-        Me.lblCar.Size = New System.Drawing.Size(51, 17)
-        Me.lblCar.TabIndex = 9
-        Me.lblCar.Text = "Label6"
-        '
-        'lblPrice
-        '
-        Me.lblPrice.AutoSize = True
-        Me.lblPrice.Location = New System.Drawing.Point(51, 316)
-        Me.lblPrice.Name = "lblPrice"
-        Me.lblPrice.Size = New System.Drawing.Size(51, 17)
-        Me.lblPrice.TabIndex = 8
-        Me.lblPrice.Text = "Label5"
-        '
-        'lblService
-        '
-        Me.lblService.AutoSize = True
-        Me.lblService.Location = New System.Drawing.Point(45, 271)
-        Me.lblService.Name = "lblService"
-        Me.lblService.Size = New System.Drawing.Size(51, 17)
-        Me.lblService.TabIndex = 7
-        Me.lblService.Text = "Label4"
-        '
-        'lblDate
-        '
-        Me.lblDate.AutoSize = True
-        Me.lblDate.Location = New System.Drawing.Point(48, 239)
-        Me.lblDate.Name = "lblDate"
-        Me.lblDate.Size = New System.Drawing.Size(52, 17)
-        Me.lblDate.TabIndex = 6
-        Me.lblDate.Text = "lblDate"
-        '
-        'lblPlate
-        '
-        Me.lblPlate.AutoSize = True
-        Me.lblPlate.Location = New System.Drawing.Point(45, 202)
-        Me.lblPlate.Name = "lblPlate"
-        Me.lblPlate.Size = New System.Drawing.Size(51, 17)
-        Me.lblPlate.TabIndex = 5
-        Me.lblPlate.Text = "Label2"
-        '
-        'lblName
-        '
-        Me.lblName.AutoSize = True
-        Me.lblName.Location = New System.Drawing.Point(42, 159)
-        Me.lblName.Name = "lblName"
-        Me.lblName.Size = New System.Drawing.Size(51, 17)
-        Me.lblName.TabIndex = 4
-        Me.lblName.Text = "Label2"
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(29, 19)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(51, 17)
+        Me.Label1.Size = New System.Drawing.Size(216, 25)
         Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Label1"
+        Me.Label1.Text = "ENTER NUMBER PLATE"
         '
         'txtSearchPlate
         '
-        Me.txtSearchPlate.Location = New System.Drawing.Point(29, 42)
+        Me.txtSearchPlate.Location = New System.Drawing.Point(34, 47)
         Me.txtSearchPlate.Name = "txtSearchPlate"
-        Me.txtSearchPlate.Size = New System.Drawing.Size(100, 22)
+        Me.txtSearchPlate.Size = New System.Drawing.Size(201, 22)
         Me.txtSearchPlate.TabIndex = 1
         '
         'btnSearch
         '
-        Me.btnSearch.Location = New System.Drawing.Point(32, 80)
+        Me.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnSearch.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSearch.Location = New System.Drawing.Point(34, 79)
         Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(75, 23)
+        Me.btnSearch.Size = New System.Drawing.Size(105, 35)
         Me.btnSearch.TabIndex = 0
         Me.btnSearch.Text = "Find Car"
         Me.btnSearch.UseVisualStyleBackColor = True
         '
-        'DataGridView1
+        'Panel3
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(346, 159)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(240, 150)
-        Me.DataGridView1.TabIndex = 10
+        Me.Panel3.Controls.Add(Me.Label7)
+        Me.Panel3.Controls.Add(Me.Label6)
+        Me.Panel3.Controls.Add(Me.Label5)
+        Me.Panel3.Controls.Add(Me.Label4)
+        Me.Panel3.Controls.Add(Me.Label3)
+        Me.Panel3.Controls.Add(Me.Label2)
+        Me.Panel3.Controls.Add(Me.lblName)
+        Me.Panel3.Controls.Add(Me.lblCar)
+        Me.Panel3.Controls.Add(Me.lblPlate)
+        Me.Panel3.Controls.Add(Me.lblPrice)
+        Me.Panel3.Controls.Add(Me.lblDate)
+        Me.Panel3.Controls.Add(Me.lblService)
+        Me.Panel3.Location = New System.Drawing.Point(251, 19)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(506, 352)
+        Me.Panel3.TabIndex = 11
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(28, 308)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(43, 19)
+        Me.Label7.TabIndex = 15
+        Me.Label7.Text = "DATE"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(28, 251)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(47, 19)
+        Me.Label6.TabIndex = 14
+        Me.Label6.Text = "PRICE"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(20, 173)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(99, 19)
+        Me.Label5.TabIndex = 13
+        Me.Label5.Text = "SERVICE TYPE"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(17, 130)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(37, 19)
+        Me.Label4.TabIndex = 12
+        Me.Label4.Text = "CAR"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(20, 76)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(112, 19)
+        Me.Label3.TabIndex = 11
+        Me.Label3.Text = "PLATE NUMBER"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(17, 28)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(54, 19)
+        Me.Label2.TabIndex = 10
+        Me.Label2.Text = "NAME "
+        '
+        'lblName
+        '
+        Me.lblName.AutoSize = True
+        Me.lblName.Font = New System.Drawing.Font("Segoe UI", 7.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblName.Location = New System.Drawing.Point(177, 30)
+        Me.lblName.Name = "lblName"
+        Me.lblName.Size = New System.Drawing.Size(51, 19)
+        Me.lblName.TabIndex = 4
+        Me.lblName.Text = "Label2"
+        '
+        'lblCar
+        '
+        Me.lblCar.AutoSize = True
+        Me.lblCar.Font = New System.Drawing.Font("Segoe UI", 7.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCar.Location = New System.Drawing.Point(177, 130)
+        Me.lblCar.Name = "lblCar"
+        Me.lblCar.Size = New System.Drawing.Size(51, 19)
+        Me.lblCar.TabIndex = 9
+        Me.lblCar.Text = "Label6"
+        '
+        'lblPlate
+        '
+        Me.lblPlate.AutoSize = True
+        Me.lblPlate.Font = New System.Drawing.Font("Segoe UI", 7.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPlate.Location = New System.Drawing.Point(177, 76)
+        Me.lblPlate.Name = "lblPlate"
+        Me.lblPlate.Size = New System.Drawing.Size(51, 19)
+        Me.lblPlate.TabIndex = 5
+        Me.lblPlate.Text = "Label2"
+        '
+        'lblPrice
+        '
+        Me.lblPrice.AutoSize = True
+        Me.lblPrice.Font = New System.Drawing.Font("Segoe UI", 7.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrice.Location = New System.Drawing.Point(177, 251)
+        Me.lblPrice.Name = "lblPrice"
+        Me.lblPrice.Size = New System.Drawing.Size(51, 19)
+        Me.lblPrice.TabIndex = 8
+        Me.lblPrice.Text = "Label5"
+        '
+        'lblDate
+        '
+        Me.lblDate.AutoSize = True
+        Me.lblDate.Font = New System.Drawing.Font("Segoe UI", 7.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDate.Location = New System.Drawing.Point(177, 308)
+        Me.lblDate.Name = "lblDate"
+        Me.lblDate.Size = New System.Drawing.Size(48, 19)
+        Me.lblDate.TabIndex = 6
+        Me.lblDate.Text = "lable3"
+        '
+        'lblService
+        '
+        Me.lblService.AutoSize = True
+        Me.lblService.Font = New System.Drawing.Font("Segoe UI", 7.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblService.Location = New System.Drawing.Point(177, 173)
+        Me.lblService.Name = "lblService"
+        Me.lblService.Size = New System.Drawing.Size(51, 19)
+        Me.lblService.TabIndex = 7
+        Me.lblService.Text = "Label4"
         '
         'CarStatusForm
         '
@@ -182,7 +279,6 @@ Partial Class CarStatusForm
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
-        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "CarStatusForm"
         Me.Text = "CarStatusForm"
         Me.Panel1.ResumeLayout(False)
@@ -191,14 +287,13 @@ Partial Class CarStatusForm
         Me.MenuStrip1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents txtSearchPlate As TextBox
@@ -209,5 +304,15 @@ Partial Class CarStatusForm
     Friend WithEvents lblName As Label
     Friend WithEvents lblCar As Label
     Friend WithEvents lblPrice As Label
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents mnuHome As ToolStripMenuItem
+    Friend WithEvents mnuBack As ToolStripMenuItem
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
 End Class

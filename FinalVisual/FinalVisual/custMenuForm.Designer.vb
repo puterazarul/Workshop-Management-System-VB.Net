@@ -26,7 +26,11 @@ Partial Class custMenuForm
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(custMenuForm))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuHome = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuFileHome = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuFileSwitch = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuFileNew = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuFileLogin = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnBook = New System.Windows.Forms.Button()
         Me.btnStatus = New System.Windows.Forms.Button()
@@ -50,20 +54,46 @@ Partial Class custMenuForm
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.Transparent
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuHome})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(806, 36)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
-        'ToolStripMenuItem1
+        'mnuHome
         '
-        Me.ToolStripMenuItem1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(51, 32)
-        Me.ToolStripMenuItem1.Text = "///"
+        Me.mnuHome.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuFileHome, Me.mnuFileSwitch})
+        Me.mnuHome.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mnuHome.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.mnuHome.Name = "mnuHome"
+        Me.mnuHome.Size = New System.Drawing.Size(51, 32)
+        Me.mnuHome.Text = "///"
+        '
+        'mnuFileHome
+        '
+        Me.mnuFileHome.Name = "mnuFileHome"
+        Me.mnuFileHome.Size = New System.Drawing.Size(265, 32)
+        Me.mnuFileHome.Text = "HOME"
+        '
+        'mnuFileSwitch
+        '
+        Me.mnuFileSwitch.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuFileNew, Me.mnuFileLogin})
+        Me.mnuFileSwitch.Name = "mnuFileSwitch"
+        Me.mnuFileSwitch.Size = New System.Drawing.Size(265, 32)
+        Me.mnuFileSwitch.Text = "SWITCH ACCOUNT"
+        '
+        'mnuFileNew
+        '
+        Me.mnuFileNew.Name = "mnuFileNew"
+        Me.mnuFileNew.Size = New System.Drawing.Size(237, 32)
+        Me.mnuFileNew.Text = "NEW ACCOUNT"
+        '
+        'mnuFileLogin
+        '
+        Me.mnuFileLogin.Name = "mnuFileLogin"
+        Me.mnuFileLogin.Size = New System.Drawing.Size(237, 32)
+        Me.mnuFileLogin.Text = "LOGIN"
         '
         'PictureBox1
         '
@@ -145,10 +175,14 @@ Partial Class custMenuForm
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents mnuHome As ToolStripMenuItem
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents btnBook As Button
     Friend WithEvents btnStatus As Button
     Friend WithEvents lblDateTime As Label
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents mnuFileHome As ToolStripMenuItem
+    Friend WithEvents mnuFileSwitch As ToolStripMenuItem
+    Friend WithEvents mnuFileNew As ToolStripMenuItem
+    Friend WithEvents mnuFileLogin As ToolStripMenuItem
 End Class

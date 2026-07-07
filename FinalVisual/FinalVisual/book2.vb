@@ -75,8 +75,15 @@ VALUES
     End Sub
 
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
-        book1.Show()
-        Me.Close()
+        If String.IsNullOrEmpty(SessionData.CurrentUsername) Then
+            MessageBox.Show("You must log in first before accessing the user menu.", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        Else
+            custMenuForm.Show()
+            Me.Close()
+        End If
     End Sub
 
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
+    End Sub
 End Class
