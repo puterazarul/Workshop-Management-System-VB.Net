@@ -44,26 +44,29 @@ Partial Class loginForm
         '
         'txtUsername
         '
-        Me.txtUsername.Location = New System.Drawing.Point(442, 154)
+        Me.txtUsername.Location = New System.Drawing.Point(332, 125)
+        Me.txtUsername.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(317, 22)
+        Me.txtUsername.Size = New System.Drawing.Size(239, 20)
         Me.txtUsername.TabIndex = 1
         '
         'txtPassword
         '
-        Me.txtPassword.Location = New System.Drawing.Point(442, 227)
+        Me.txtPassword.Location = New System.Drawing.Point(332, 184)
+        Me.txtPassword.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPassword.Size = New System.Drawing.Size(317, 22)
+        Me.txtPassword.Size = New System.Drawing.Size(239, 20)
         Me.txtPassword.TabIndex = 2
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(438, 132)
+        Me.Label2.Location = New System.Drawing.Point(328, 107)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(76, 19)
+        Me.Label2.Size = New System.Drawing.Size(59, 13)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Username"
         '
@@ -71,18 +74,20 @@ Partial Class loginForm
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(438, 205)
+        Me.Label3.Location = New System.Drawing.Point(328, 167)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(73, 19)
+        Me.Label3.Size = New System.Drawing.Size(57, 13)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Password"
         '
         'btnLogin
         '
         Me.btnLogin.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLogin.Location = New System.Drawing.Point(593, 279)
+        Me.btnLogin.Location = New System.Drawing.Point(445, 227)
+        Me.btnLogin.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(152, 41)
+        Me.btnLogin.Size = New System.Drawing.Size(114, 33)
         Me.btnLogin.TabIndex = 5
         Me.btnLogin.Text = "Log in"
         Me.btnLogin.UseVisualStyleBackColor = True
@@ -90,9 +95,10 @@ Partial Class loginForm
         'Label4
         '
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(481, 66)
+        Me.Label4.Location = New System.Drawing.Point(361, 54)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(278, 44)
+        Me.Label4.Size = New System.Drawing.Size(208, 36)
         Me.Label4.TabIndex = 9
         Me.Label4.Text = "WELCOME BACK!"
         '
@@ -100,9 +106,10 @@ Partial Class loginForm
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Panel1.Controls.Add(Me.MenuStrip1)
-        Me.Panel1.Location = New System.Drawing.Point(-6, -6)
+        Me.Panel1.Location = New System.Drawing.Point(-4, -5)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(807, 52)
+        Me.Panel1.Size = New System.Drawing.Size(605, 42)
         Me.Panel1.TabIndex = 10
         '
         'MenuStrip1
@@ -112,7 +119,8 @@ Partial Class loginForm
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuBack})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(807, 36)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(605, 29)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -121,16 +129,17 @@ Partial Class loginForm
         Me.mnuBack.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.mnuBack.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.mnuBack.Name = "mnuBack"
-        Me.mnuBack.Size = New System.Drawing.Size(76, 32)
+        Me.mnuBack.Size = New System.Drawing.Size(63, 25)
         Me.mnuBack.Text = "BACK"
         '
         'lnkForgot
         '
         Me.lnkForgot.AutoSize = True
         Me.lnkForgot.LinkColor = System.Drawing.Color.Black
-        Me.lnkForgot.Location = New System.Drawing.Point(517, 207)
+        Me.lnkForgot.Location = New System.Drawing.Point(388, 168)
+        Me.lnkForgot.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lnkForgot.Name = "lnkForgot"
-        Me.lnkForgot.Size = New System.Drawing.Size(114, 17)
+        Me.lnkForgot.Size = New System.Drawing.Size(86, 13)
         Me.lnkForgot.TabIndex = 12
         Me.lnkForgot.TabStop = True
         Me.lnkForgot.Text = "Forget Password"
@@ -139,9 +148,10 @@ Partial Class loginForm
         '
         Me.lnkRegister.AutoSize = True
         Me.lnkRegister.LinkColor = System.Drawing.Color.Black
-        Me.lnkRegister.Location = New System.Drawing.Point(590, 339)
+        Me.lnkRegister.Location = New System.Drawing.Point(442, 275)
+        Me.lnkRegister.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lnkRegister.Name = "lnkRegister"
-        Me.lnkRegister.Size = New System.Drawing.Size(155, 17)
+        Me.lnkRegister.Size = New System.Drawing.Size(120, 13)
         Me.lnkRegister.TabIndex = 13
         Me.lnkRegister.TabStop = True
         Me.lnkRegister.Text = "Register New Account?"
@@ -149,18 +159,20 @@ Partial Class loginForm
         'PictureBox1
         '
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(-6, 36)
+        Me.PictureBox1.Location = New System.Drawing.Point(-4, 29)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(405, 424)
+        Me.PictureBox1.Size = New System.Drawing.Size(304, 344)
         Me.PictureBox1.TabIndex = 8
         Me.PictureBox1.TabStop = False
         '
         'rbCustomer
         '
         Me.rbCustomer.AutoSize = True
-        Me.rbCustomer.Location = New System.Drawing.Point(442, 279)
+        Me.rbCustomer.Location = New System.Drawing.Point(332, 227)
+        Me.rbCustomer.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.rbCustomer.Name = "rbCustomer"
-        Me.rbCustomer.Size = New System.Drawing.Size(89, 21)
+        Me.rbCustomer.Size = New System.Drawing.Size(69, 17)
         Me.rbCustomer.TabIndex = 14
         Me.rbCustomer.TabStop = True
         Me.rbCustomer.Text = "Customer"
@@ -169,9 +181,10 @@ Partial Class loginForm
         'rbStaff
         '
         Me.rbStaff.AutoSize = True
-        Me.rbStaff.Location = New System.Drawing.Point(442, 316)
+        Me.rbStaff.Location = New System.Drawing.Point(332, 257)
+        Me.rbStaff.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.rbStaff.Name = "rbStaff"
-        Me.rbStaff.Size = New System.Drawing.Size(58, 21)
+        Me.rbStaff.Size = New System.Drawing.Size(47, 17)
         Me.rbStaff.TabIndex = 15
         Me.rbStaff.TabStop = True
         Me.rbStaff.Text = "Staff" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
@@ -179,9 +192,9 @@ Partial Class loginForm
         '
         'loginForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(600, 366)
         Me.Controls.Add(Me.rbStaff)
         Me.Controls.Add(Me.rbCustomer)
         Me.Controls.Add(Me.lnkRegister)
@@ -195,8 +208,8 @@ Partial Class loginForm
         Me.Controls.Add(Me.txtUsername)
         Me.Controls.Add(Me.PictureBox1)
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "loginForm"
-        Me.Text = "loginForm"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)

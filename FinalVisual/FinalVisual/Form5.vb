@@ -79,5 +79,7 @@ Public Class Form5
         Me.Close()
     End Sub
 
+    Private Sub txtPartID_TextChanged(sender As Object, e As EventArgs) Handles txtPartID.TextChanged
 
+    End Sub
 End Class

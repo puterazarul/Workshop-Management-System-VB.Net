@@ -1,6 +1,20 @@
 ﻿Imports System.Data.OleDb
+
 Public Class book2
+
     Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+        CalculatePrice()
+    End Sub
+
+    Private Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
+        SaveBooking()
+    End Sub
+
+    '==========================
+    ' SUBFUNCTION: Calculate Price
+    '==========================
+    Private Sub CalculatePrice()
+
         Dim total As Integer = 0
 
         If chkOil.Checked Then total += 80
@@ -12,10 +26,12 @@ Public Class book2
         If chkOBD.Checked Then total += 100
         If chkTint.Checked Then total += 150
 
-        txtTotalPrice.Text = total
+        txtTotalPrice.Text = total.ToString()
+
     End Sub
 
-    Private Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
+
+    Private Sub SaveBooking()
 
         Dim conn As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\UserDB.accdb;")
 
@@ -31,9 +47,9 @@ Public Class book2
         If chkTint.Checked Then service &= "Tint, "
 
         Dim cmd As New OleDbCommand("
-INSERT INTO tblBooking 
-([Name],[Phone],[PlateNo],[CarType],[BookingDate],[Session],[Service],[Price]) 
-VALUES 
+INSERT INTO tblBooking
+([Name],[Phone],[PlateNo],[CarType],[BookingDate],[Session],[Service],[Price])
+VALUES
 (@n,@p,@plate,@car,@date,@session,@service,@price)", conn)
 
         cmd.Parameters.AddWithValue("@n", lblName.Text)
@@ -53,11 +69,6 @@ VALUES
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
-        Form4.Show()
-        Me.Hide()
-    End Sub
-
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Form1.Show()
         Me.Close()
@@ -67,4 +78,5 @@ VALUES
         book1.Show()
         Me.Close()
     End Sub
+
 End Class

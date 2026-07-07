@@ -48,15 +48,17 @@ Partial Class Form5
         Me.Panel1.Controls.Add(Me.btnBack)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1065, 60)
+        Me.Panel1.Size = New System.Drawing.Size(799, 49)
         Me.Panel1.TabIndex = 2
         '
         'btnBack
         '
-        Me.btnBack.Location = New System.Drawing.Point(130, 12)
+        Me.btnBack.Location = New System.Drawing.Point(98, 10)
+        Me.btnBack.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnBack.Name = "btnBack"
-        Me.btnBack.Size = New System.Drawing.Size(90, 34)
+        Me.btnBack.Size = New System.Drawing.Size(68, 28)
         Me.btnBack.TabIndex = 0
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = True
@@ -64,124 +66,138 @@ Partial Class Form5
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(60, 89)
+        Me.Label1.Location = New System.Drawing.Point(45, 72)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(190, 17)
+        Me.Label1.Size = New System.Drawing.Size(150, 13)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "INVENTORY MANAGEMENT"
         '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(273, 117)
+        Me.DataGridView1.Location = New System.Drawing.Point(205, 95)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(713, 147)
+        Me.DataGridView1.Size = New System.Drawing.Size(535, 119)
         Me.DataGridView1.TabIndex = 4
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(45, 157)
+        Me.Label2.Location = New System.Drawing.Point(34, 128)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(59, 17)
+        Me.Label2.Size = New System.Drawing.Size(46, 13)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Part ID :"
         '
         'txtPartID
         '
-        Me.txtPartID.Location = New System.Drawing.Point(145, 157)
+        Me.txtPartID.Location = New System.Drawing.Point(109, 128)
+        Me.txtPartID.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtPartID.Name = "txtPartID"
-        Me.txtPartID.Size = New System.Drawing.Size(100, 22)
+        Me.txtPartID.Size = New System.Drawing.Size(76, 20)
         Me.txtPartID.TabIndex = 6
         '
         'txtPartName
         '
-        Me.txtPartName.Location = New System.Drawing.Point(145, 199)
+        Me.txtPartName.Location = New System.Drawing.Point(109, 162)
+        Me.txtPartName.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtPartName.Name = "txtPartName"
-        Me.txtPartName.Size = New System.Drawing.Size(100, 22)
+        Me.txtPartName.Size = New System.Drawing.Size(76, 20)
         Me.txtPartName.TabIndex = 7
         '
         'txtQuantity
         '
-        Me.txtQuantity.Location = New System.Drawing.Point(145, 242)
+        Me.txtQuantity.Location = New System.Drawing.Point(109, 197)
+        Me.txtQuantity.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtQuantity.Name = "txtQuantity"
-        Me.txtQuantity.Size = New System.Drawing.Size(100, 22)
+        Me.txtQuantity.Size = New System.Drawing.Size(76, 20)
         Me.txtQuantity.TabIndex = 8
         '
         'txtPrice
         '
-        Me.txtPrice.Location = New System.Drawing.Point(145, 283)
+        Me.txtPrice.Location = New System.Drawing.Point(109, 230)
+        Me.txtPrice.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtPrice.Name = "txtPrice"
-        Me.txtPrice.Size = New System.Drawing.Size(100, 22)
+        Me.txtPrice.Size = New System.Drawing.Size(76, 20)
         Me.txtPrice.TabIndex = 9
         '
         'txtStatus
         '
-        Me.txtStatus.Location = New System.Drawing.Point(145, 328)
+        Me.txtStatus.Location = New System.Drawing.Point(109, 266)
+        Me.txtStatus.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtStatus.Name = "txtStatus"
-        Me.txtStatus.Size = New System.Drawing.Size(100, 22)
+        Me.txtStatus.Size = New System.Drawing.Size(76, 20)
         Me.txtStatus.TabIndex = 10
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(48, 203)
+        Me.Label3.Location = New System.Drawing.Point(36, 165)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(83, 17)
+        Me.Label3.Size = New System.Drawing.Size(63, 13)
         Me.Label3.TabIndex = 11
         Me.Label3.Text = "Part Name :"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(51, 246)
+        Me.Label4.Location = New System.Drawing.Point(38, 200)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(61, 17)
+        Me.Label4.Size = New System.Drawing.Size(46, 13)
         Me.Label4.TabIndex = 12
         Me.Label4.Text = "Quantity"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(51, 287)
+        Me.Label5.Location = New System.Drawing.Point(38, 233)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(40, 17)
+        Me.Label5.Size = New System.Drawing.Size(31, 13)
         Me.Label5.TabIndex = 13
         Me.Label5.Text = "Price"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(54, 338)
+        Me.Label6.Location = New System.Drawing.Point(40, 275)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(60, 17)
+        Me.Label6.Size = New System.Drawing.Size(45, 13)
         Me.Label6.TabIndex = 14
         Me.Label6.Text = "Supplier"
         '
         'btnUpdateStock
         '
-        Me.btnUpdateStock.Location = New System.Drawing.Point(63, 383)
+        Me.btnUpdateStock.Location = New System.Drawing.Point(47, 311)
+        Me.btnUpdateStock.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnUpdateStock.Name = "btnUpdateStock"
-        Me.btnUpdateStock.Size = New System.Drawing.Size(80, 52)
+        Me.btnUpdateStock.Size = New System.Drawing.Size(60, 42)
         Me.btnUpdateStock.TabIndex = 15
         Me.btnUpdateStock.Text = "Update Stock"
         Me.btnUpdateStock.UseVisualStyleBackColor = True
         '
         'btnClear
         '
-        Me.btnClear.Location = New System.Drawing.Point(184, 383)
+        Me.btnClear.Location = New System.Drawing.Point(138, 311)
+        Me.btnClear.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(81, 52)
+        Me.btnClear.Size = New System.Drawing.Size(61, 42)
         Me.btnClear.TabIndex = 16
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = True
         '
         'Form5
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1065, 540)
+        Me.ClientSize = New System.Drawing.Size(799, 439)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnUpdateStock)
         Me.Controls.Add(Me.Label6)
@@ -197,6 +213,7 @@ Partial Class Form5
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Form5"
         Me.Text = "Form5"
         Me.Panel1.ResumeLayout(False)
