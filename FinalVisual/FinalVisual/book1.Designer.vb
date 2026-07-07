@@ -38,6 +38,7 @@ Partial Class book1
         Me.Label5 = New System.Windows.Forms.Label()
         Me.cmbCarType = New System.Windows.Forms.ComboBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.lnklblAccount = New System.Windows.Forms.LinkLabel()
         Me.Panel1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -191,11 +192,24 @@ Partial Class book1
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
+        'lnklblAccount
+        '
+        Me.lnklblAccount.AutoSize = True
+        Me.lnklblAccount.BackColor = System.Drawing.Color.Transparent
+        Me.lnklblAccount.LinkColor = System.Drawing.Color.Black
+        Me.lnklblAccount.Location = New System.Drawing.Point(562, 349)
+        Me.lnklblAccount.Name = "lnklblAccount"
+        Me.lnklblAccount.Size = New System.Drawing.Size(195, 17)
+        Me.lnklblAccount.TabIndex = 13
+        Me.lnklblAccount.TabStop = True
+        Me.lnklblAccount.Text = "Have an Account? Click Here!"
+        '
         'book1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lnklblAccount)
         Me.Controls.Add(Me.cmbCarType)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.txtPlate)
@@ -237,4 +251,5 @@ Partial Class book1
     Friend WithEvents txtPlate As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents cmbCarType As ComboBox
+    Friend WithEvents lnklblAccount As LinkLabel
 End Class

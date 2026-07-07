@@ -23,7 +23,6 @@ Partial Class loginForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(loginForm))
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.txtUsername = New System.Windows.Forms.TextBox()
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -36,19 +35,12 @@ Partial Class loginForm
         Me.lnkForgot = New System.Windows.Forms.LinkLabel()
         Me.lnkRegister = New System.Windows.Forms.LinkLabel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.rbCustomer = New System.Windows.Forms.RadioButton()
+        Me.rbStaff = New System.Windows.Forms.RadioButton()
         Me.Panel1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Label1
-        '
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(549, 93)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(239, 42)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "STAFF"
         '
         'txtUsername
         '
@@ -88,9 +80,9 @@ Partial Class loginForm
         'btnLogin
         '
         Me.btnLogin.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLogin.Location = New System.Drawing.Point(529, 307)
+        Me.btnLogin.Location = New System.Drawing.Point(593, 279)
         Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(134, 41)
+        Me.btnLogin.Size = New System.Drawing.Size(152, 41)
         Me.btnLogin.TabIndex = 5
         Me.btnLogin.Text = "Log in"
         Me.btnLogin.UseVisualStyleBackColor = True
@@ -98,7 +90,7 @@ Partial Class loginForm
         'Label4
         '
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(481, 49)
+        Me.Label4.Location = New System.Drawing.Point(481, 66)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(278, 44)
         Me.Label4.TabIndex = 9
@@ -147,7 +139,7 @@ Partial Class loginForm
         '
         Me.lnkRegister.AutoSize = True
         Me.lnkRegister.LinkColor = System.Drawing.Color.Black
-        Me.lnkRegister.Location = New System.Drawing.Point(517, 275)
+        Me.lnkRegister.Location = New System.Drawing.Point(590, 339)
         Me.lnkRegister.Name = "lnkRegister"
         Me.lnkRegister.Size = New System.Drawing.Size(155, 17)
         Me.lnkRegister.TabIndex = 13
@@ -163,11 +155,35 @@ Partial Class loginForm
         Me.PictureBox1.TabIndex = 8
         Me.PictureBox1.TabStop = False
         '
+        'rbCustomer
+        '
+        Me.rbCustomer.AutoSize = True
+        Me.rbCustomer.Location = New System.Drawing.Point(442, 279)
+        Me.rbCustomer.Name = "rbCustomer"
+        Me.rbCustomer.Size = New System.Drawing.Size(89, 21)
+        Me.rbCustomer.TabIndex = 14
+        Me.rbCustomer.TabStop = True
+        Me.rbCustomer.Text = "Customer"
+        Me.rbCustomer.UseVisualStyleBackColor = True
+        '
+        'rbStaff
+        '
+        Me.rbStaff.AutoSize = True
+        Me.rbStaff.Location = New System.Drawing.Point(442, 316)
+        Me.rbStaff.Name = "rbStaff"
+        Me.rbStaff.Size = New System.Drawing.Size(58, 21)
+        Me.rbStaff.TabIndex = 15
+        Me.rbStaff.TabStop = True
+        Me.rbStaff.Text = "Staff" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.rbStaff.UseVisualStyleBackColor = True
+        '
         'loginForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.rbStaff)
+        Me.Controls.Add(Me.rbCustomer)
         Me.Controls.Add(Me.lnkRegister)
         Me.Controls.Add(Me.lnkForgot)
         Me.Controls.Add(Me.Panel1)
@@ -177,7 +193,6 @@ Partial Class loginForm
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.txtUsername)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "loginForm"
@@ -191,8 +206,6 @@ Partial Class loginForm
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Label1 As Label
     Friend WithEvents txtUsername As TextBox
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents Label2 As Label
@@ -205,4 +218,6 @@ Partial Class loginForm
     Friend WithEvents lnkRegister As LinkLabel
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents mnuBack As ToolStripMenuItem
+    Friend WithEvents rbCustomer As RadioButton
+    Friend WithEvents rbStaff As RadioButton
 End Class

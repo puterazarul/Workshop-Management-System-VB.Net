@@ -114,6 +114,12 @@
     <Compile Include="book2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="custMenuForm.Designer.vb">
+      <DependentUpon>custMenuForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custMenuForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="forgetPassword.Designer.vb">
       <DependentUpon>forgetPassword.vb</DependentUpon>
     </Compile>
@@ -185,6 +191,7 @@
     <Compile Include="registerForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SessionData.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="book1.resx">
@@ -192,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="book2.resx">
       <DependentUpon>book2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custMenuForm.resx">
+      <DependentUpon>custMenuForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forgetPassword.resx">
       <DependentUpon>forgetPassword.vb</DependentUpon>

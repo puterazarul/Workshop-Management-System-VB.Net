@@ -32,6 +32,7 @@ Partial Class forgetPassword
         Me.txtAnswer = New System.Windows.Forms.TextBox()
         Me.txtForgotUsername = New System.Windows.Forms.TextBox()
         Me.lblQuestion = New System.Windows.Forms.Label()
+        Me.btnBack = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -55,14 +56,16 @@ Partial Class forgetPassword
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(130, 19)
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(97, 19)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(156, 17)
+        Me.Label1.Size = New System.Drawing.Size(226, 28)
         Me.Label1.TabIndex = 8
         Me.Label1.Text = "Forgot Your Password?"
         '
         'btnResetPassword
         '
+        Me.btnResetPassword.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnResetPassword.Location = New System.Drawing.Point(130, 289)
         Me.btnResetPassword.Name = "btnResetPassword"
         Me.btnResetPassword.Size = New System.Drawing.Size(156, 23)
@@ -72,6 +75,8 @@ Partial Class forgetPassword
         '
         'btnFindUser
         '
+        Me.btnFindUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnFindUser.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnFindUser.Location = New System.Drawing.Point(49, 138)
         Me.btnFindUser.Name = "btnFindUser"
         Me.btnFindUser.Size = New System.Drawing.Size(125, 23)
@@ -82,18 +87,20 @@ Partial Class forgetPassword
         'lblNewPass
         '
         Me.lblNewPass.AutoSize = True
+        Me.lblNewPass.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNewPass.Location = New System.Drawing.Point(260, 205)
         Me.lblNewPass.Name = "lblNewPass"
-        Me.lblNewPass.Size = New System.Drawing.Size(100, 17)
+        Me.lblNewPass.Size = New System.Drawing.Size(107, 19)
         Me.lblNewPass.TabIndex = 5
         Me.lblNewPass.Text = "New Password"
         '
         'lblUser
         '
         Me.lblUser.AutoSize = True
+        Me.lblUser.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblUser.Location = New System.Drawing.Point(46, 64)
         Me.lblUser.Name = "lblUser"
-        Me.lblUser.Size = New System.Drawing.Size(73, 17)
+        Me.lblUser.Size = New System.Drawing.Size(76, 19)
         Me.lblUser.TabIndex = 4
         Me.lblUser.Text = "Username"
         '
@@ -124,15 +131,26 @@ Partial Class forgetPassword
         Me.lblQuestion.AutoSize = True
         Me.lblQuestion.Location = New System.Drawing.Point(46, 205)
         Me.lblQuestion.Name = "lblQuestion"
-        Me.lblQuestion.Size = New System.Drawing.Size(51, 17)
+        Me.lblQuestion.Size = New System.Drawing.Size(0, 17)
         Me.lblQuestion.TabIndex = 0
-        Me.lblQuestion.Text = "Label1"
+        '
+        'btnBack
+        '
+        Me.btnBack.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBack.Location = New System.Drawing.Point(13, 13)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(75, 23)
+        Me.btnBack.TabIndex = 1
+        Me.btnBack.Text = "Back"
+        Me.btnBack.UseVisualStyleBackColor = True
         '
         'forgetPassword
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "forgetPassword"
         Me.Text = "forgetPassword"
@@ -152,4 +170,5 @@ Partial Class forgetPassword
     Friend WithEvents txtAnswer As TextBox
     Friend WithEvents txtForgotUsername As TextBox
     Friend WithEvents lblQuestion As Label
+    Friend WithEvents btnBack As Button
 End Class

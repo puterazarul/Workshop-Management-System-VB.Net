@@ -1,17 +1,34 @@
 ﻿Imports System.Data.OleDb
 Public Class registerForm
+
     Dim connString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\UserDB.accdb;"
+
     Private Sub btnRegister_Click(sender As Object, e As EventArgs) Handles btnRegister.Click
-        If txtRegUsername.Text.Trim() = "" Or txtRegPassword.Text.Trim() = "" Or cmbSecurityQuestion.SelectedIndex = -1 Or txtSecurityAnswer.Text.Trim() = "" Then
+        Dim tableName As String = ""
+
+        If rbCustomer.Checked Then
+            tableName = "tblCustomer"
+        ElseIf rbStaff.Checked Then
+            tableName = "tblStaff"
+        Else
+            MessageBox.Show("Please select Customer or Staff.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
+
+        ' Basic validation
+        If txtRegUsername.Text.Trim() = "" OrElse
+       txtRegPassword.Text.Trim() = "" OrElse
+       cmbSecurityQuestion.SelectedIndex = -1 OrElse
+       txtSecurityAnswer.Text.Trim() = "" Then
             MessageBox.Show("Please fill out all fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Exit Sub
         End If
 
         Using conn As New OleDbConnection(connString)
-            ' Check if username exists
-            Dim checkQuery As String = "SELECT COUNT(*) FROM tblUsers WHERE [Username] = @user"
+            ' 1. Check if username exists in the selected table
+            Dim checkQuery As String = "SELECT COUNT(*) FROM [" & tableName & "] WHERE [Username] = ?"
             Using checkCmd As New OleDbCommand(checkQuery, conn)
-                checkCmd.Parameters.AddWithValue("@user", txtRegUsername.Text.Trim())
+                checkCmd.Parameters.AddWithValue("?", txtRegUsername.Text.Trim())
                 Try
                     conn.Open()
                     If Convert.ToInt32(checkCmd.ExecuteScalar()) > 0 Then
@@ -24,13 +41,25 @@ Public Class registerForm
                 End Try
             End Using
 
-            ' Insert new user
-            Dim insertQuery As String = "INSERT INTO tblUsers ([Username], [Password], [SecurityQuestion], [SecurityAnswer]) VALUES (@user, @pass, @q, @a)"
+            ' 2. Insert new user into the correct table
+            Dim insertQuery As String
+            If tableName = "tblCustomer" Then
+                insertQuery = "INSERT INTO tblCustomer ([Username], [Password], [SecurityQuestion], [SecurityAnswer], [PhoneNumber], [Car], [PlateNumber]) VALUES (?,?,?,?,?,?,?)"
+            Else
+                insertQuery = "INSERT INTO tblStaff ([Username], [Password], [SecurityQuestion], [SecurityAnswer]) VALUES (?,?,?,?)"
+            End If
+
             Using insertCmd As New OleDbCommand(insertQuery, conn)
-                insertCmd.Parameters.AddWithValue("@user", txtRegUsername.Text.Trim())
-                insertCmd.Parameters.AddWithValue("@pass", txtRegPassword.Text.Trim())
-                insertCmd.Parameters.AddWithValue("@q", cmbSecurityQuestion.SelectedItem.ToString())
-                insertCmd.Parameters.AddWithValue("@a", txtSecurityAnswer.Text.Trim().ToLower())
+                insertCmd.Parameters.AddWithValue("?", txtRegUsername.Text.Trim())
+                insertCmd.Parameters.AddWithValue("?", txtRegPassword.Text.Trim())
+                insertCmd.Parameters.AddWithValue("?", cmbSecurityQuestion.SelectedItem.ToString())
+                insertCmd.Parameters.AddWithValue("?", txtSecurityAnswer.Text.Trim().ToLower())
+
+                If tableName = "tblCustomer" Then
+                    insertCmd.Parameters.AddWithValue("?", txtPhone.Text.Trim())
+                    insertCmd.Parameters.AddWithValue("?", cmbCarType.Text.Trim())
+                    insertCmd.Parameters.AddWithValue("?", txtPlate.Text.Trim())
+                End If
 
                 Try
                     insertCmd.ExecuteNonQuery()
@@ -45,4 +74,8 @@ Public Class registerForm
     End Sub
 
 
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+        loginForm.Show()
+        Me.Close()
+    End Sub
 End Class

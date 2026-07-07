@@ -5,7 +5,7 @@ Public Class Form4
     Private Sub btnSearch_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
         Dim connString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\UserDB.accdb;"
         Dim conn As New OleDbConnection(connString)
-        Dim cmd As New OleDbCommand("SELECT * FROM Booking WHERE PlateNo=@plate", conn)
+        Dim cmd As New OleDbCommand("SELECT * FROM tblBooking WHERE PlateNo=@plate", conn)
         cmd.Parameters.AddWithValue("@plate", txtSearchPlate.Text)
 
         conn.Open()
