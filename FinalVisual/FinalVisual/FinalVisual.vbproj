@@ -114,6 +114,12 @@
     <Compile Include="book2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="CarStatusForm.Designer.vb">
+      <DependentUpon>CarStatusForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CarStatusForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="custMenuForm.Designer.vb">
       <DependentUpon>custMenuForm.vb</DependentUpon>
     </Compile>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="book2.resx">
       <DependentUpon>book2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarStatusForm.resx">
+      <DependentUpon>CarStatusForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="custMenuForm.resx">
       <DependentUpon>custMenuForm.vb</DependentUpon>

@@ -7,7 +7,7 @@ Public Class loginForm
         SessionData.CurrentUsername = txtUsername.Text.Trim()
 
         ' If you know whether they are Customer or Staff:
-        SessionData.CurrentRole = "Customer"  ' or "Staff"
+        SessionData.CurrentRole = "Customer"
 
         Dim tableName As String = ""
 
@@ -98,8 +98,7 @@ Public Class loginForm
         Me.Close()
     End Sub
 
-    Private Sub loginForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    End Sub
+
 
 End Class

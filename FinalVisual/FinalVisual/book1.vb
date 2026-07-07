@@ -1,27 +1,26 @@
 ﻿Imports System.Data.OleDb
 Public Class book1
-    Public Sub LoadCustomerData(username As String, tableName As String)
+    Public Sub LoadCustomerData(username As String)
         Dim connString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\UserDB.accdb;"
         Using conn As New OleDbConnection(connString)
-            Dim sql As String = "SELECT Car, PhoneNumber, PlateNumber FROM tblCustomer WHERE [Username] = ?"
+            Dim sql As String = "SELECT Username, Car, PhoneNumber , PlateNumber FROM tblCustomer WHERE [Username] = ?"
+
             Using cmd As New OleDbCommand(sql, conn)
                 cmd.Parameters.AddWithValue("?", username)
-                Try
-                    conn.Open()
-                    Using rdr As OleDbDataReader = cmd.ExecuteReader()
-                        If rdr.Read() Then
-                            txtName.Text = rdr("FullName").ToString()
-                            txtPhone.Text = rdr("PhoneNumber").ToString()
-                            cmbCarType.Text = rdr("Car").ToString()
-                            txtPlate.Text = rdr("PlateNumber").ToString()
-                        End If
-                    End Using
-                Catch ex As Exception
-                    MessageBox.Show("Error loading user data: " & ex.Message)
-                End Try
+                conn.Open()
+                Using rdr As OleDbDataReader = cmd.ExecuteReader()
+                    If rdr.Read() Then
+                        ' Match your actual column names
+                        txtName.Text = rdr("Username").ToString()   ' Customer name
+                        txtPhone.Text = rdr("PhoneNumber").ToString()      ' Phone number
+                        cmbCarType.Text = rdr("Car").ToString()              ' Car
+                        txtPlate.Text = rdr("PlateNumber").ToString()     ' Plate number
+                    End If
+                End Using
             End Using
         End Using
     End Sub
+
     Private Sub book1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' 1. Paksa Label jadi "anak" kepada PictureBox secara rasmi
         Label1.Parent = PictureBox1
@@ -61,7 +60,4 @@ Public Class book1
         Me.Hide()
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-
-    End Sub
 End Class

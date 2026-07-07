@@ -12,7 +12,20 @@
         lblDateTime.Text = $"Welcome Back! | {DateTime.Now.ToString("dddd, MMMM d, yyyy - h:mm:ss tt")}"
     End Sub
 
+    Private Sub btnBook_Click(sender As Object, e As EventArgs) Handles btnBook.Click
+        ' Create the booking form
+        Dim bookForm As New book1()
 
+        ' Pass the logged-in username to load their data
+        book1.LoadCustomerData(SessionData.CurrentUsername)
 
+        ' Show booking form and hide menu
+        book1.Show()
+        Me.Hide()
+    End Sub
 
+    Private Sub btnStatus_Click(sender As Object, e As EventArgs) Handles btnStatus.Click
+        CarStatusForm.Show()
+        Me.Hide()
+    End Sub
 End Class

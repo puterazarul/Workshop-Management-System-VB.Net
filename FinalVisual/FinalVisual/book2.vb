@@ -31,7 +31,7 @@ Public Class book2
         If chkTint.Checked Then service &= "Tint, "
 
         Dim cmd As New OleDbCommand("
-INSERT INTO Booking 
+INSERT INTO tblBooking 
 ([Name],[Phone],[PlateNo],[CarType],[BookingDate],[Session],[Service],[Price]) 
 VALUES 
 (@n,@p,@plate,@car,@date,@session,@service,@price)", conn)

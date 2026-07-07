@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class registerForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class registerForm
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lblRegister = New System.Windows.Forms.Label()
         Me.txtRegUsername = New System.Windows.Forms.TextBox()
@@ -28,19 +28,19 @@ Partial Class registerForm
         Me.lblUser = New System.Windows.Forms.Label()
         Me.lblPass = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnBack = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtPlate = New System.Windows.Forms.TextBox()
+        Me.txtPhone = New System.Windows.Forms.TextBox()
+        Me.cmbCarType = New System.Windows.Forms.ComboBox()
+        Me.rbStaff = New System.Windows.Forms.RadioButton()
+        Me.rbCustomer = New System.Windows.Forms.RadioButton()
         Me.txtSecurityAnswer = New System.Windows.Forms.TextBox()
         Me.lblSec = New System.Windows.Forms.Label()
         Me.cmbSecurityQuestion = New System.Windows.Forms.ComboBox()
         Me.btnRegister = New System.Windows.Forms.Button()
-        Me.rbCustomer = New System.Windows.Forms.RadioButton()
-        Me.rbStaff = New System.Windows.Forms.RadioButton()
-        Me.btnBack = New System.Windows.Forms.Button()
-        Me.cmbCarType = New System.Windows.Forms.ComboBox()
-        Me.txtPhone = New System.Windows.Forms.TextBox()
-        Me.txtPlate = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -117,6 +117,92 @@ Partial Class registerForm
         Me.Panel1.Size = New System.Drawing.Size(694, 367)
         Me.Panel1.TabIndex = 5
         '
+        'btnBack
+        '
+        Me.btnBack.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBack.Location = New System.Drawing.Point(19, 21)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(75, 23)
+        Me.btnBack.TabIndex = 6
+        Me.btnBack.Text = "Back"
+        Me.btnBack.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(511, 92)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(32, 19)
+        Me.Label3.TabIndex = 15
+        Me.Label3.Text = "Car"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(511, 158)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(106, 17)
+        Me.Label2.TabIndex = 14
+        Me.Label2.Text = "Plate Number"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(299, 158)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(110, 19)
+        Me.Label1.TabIndex = 13
+        Me.Label1.Text = "Phone Number"
+        '
+        'txtPlate
+        '
+        Me.txtPlate.Location = New System.Drawing.Point(511, 181)
+        Me.txtPlate.Name = "txtPlate"
+        Me.txtPlate.Size = New System.Drawing.Size(121, 22)
+        Me.txtPlate.TabIndex = 12
+        '
+        'txtPhone
+        '
+        Me.txtPhone.Location = New System.Drawing.Point(299, 181)
+        Me.txtPhone.Name = "txtPhone"
+        Me.txtPhone.Size = New System.Drawing.Size(140, 22)
+        Me.txtPhone.TabIndex = 11
+        '
+        'cmbCarType
+        '
+        Me.cmbCarType.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbCarType.FormattingEnabled = True
+        Me.cmbCarType.Items.AddRange(New Object() {"IRIZ", "PREVE/SUPRIMA", "PERSONA", "SAGA", "S70", "X50", "X70", "X90", "ALZA", "ARUZ", "ATIVA", "AXIA", "BEZZA", "MYVI"})
+        Me.cmbCarType.Location = New System.Drawing.Point(511, 123)
+        Me.cmbCarType.Name = "cmbCarType"
+        Me.cmbCarType.Size = New System.Drawing.Size(121, 25)
+        Me.cmbCarType.TabIndex = 10
+        '
+        'rbStaff
+        '
+        Me.rbStaff.AutoSize = True
+        Me.rbStaff.Location = New System.Drawing.Point(381, 306)
+        Me.rbStaff.Name = "rbStaff"
+        Me.rbStaff.Size = New System.Drawing.Size(58, 21)
+        Me.rbStaff.TabIndex = 9
+        Me.rbStaff.TabStop = True
+        Me.rbStaff.Text = "Staff"
+        Me.rbStaff.UseVisualStyleBackColor = True
+        '
+        'rbCustomer
+        '
+        Me.rbCustomer.AutoSize = True
+        Me.rbCustomer.Location = New System.Drawing.Point(468, 306)
+        Me.rbCustomer.Name = "rbCustomer"
+        Me.rbCustomer.Size = New System.Drawing.Size(89, 21)
+        Me.rbCustomer.TabIndex = 8
+        Me.rbCustomer.TabStop = True
+        Me.rbCustomer.Text = "Customer"
+        Me.rbCustomer.UseVisualStyleBackColor = True
+        '
         'txtSecurityAnswer
         '
         Me.txtSecurityAnswer.Location = New System.Drawing.Point(99, 268)
@@ -153,92 +239,6 @@ Partial Class registerForm
         Me.btnRegister.TabIndex = 2
         Me.btnRegister.Text = "Register"
         Me.btnRegister.UseVisualStyleBackColor = True
-        '
-        'rbCustomer
-        '
-        Me.rbCustomer.AutoSize = True
-        Me.rbCustomer.Location = New System.Drawing.Point(468, 306)
-        Me.rbCustomer.Name = "rbCustomer"
-        Me.rbCustomer.Size = New System.Drawing.Size(89, 21)
-        Me.rbCustomer.TabIndex = 8
-        Me.rbCustomer.TabStop = True
-        Me.rbCustomer.Text = "Customer"
-        Me.rbCustomer.UseVisualStyleBackColor = True
-        '
-        'rbStaff
-        '
-        Me.rbStaff.AutoSize = True
-        Me.rbStaff.Location = New System.Drawing.Point(381, 306)
-        Me.rbStaff.Name = "rbStaff"
-        Me.rbStaff.Size = New System.Drawing.Size(58, 21)
-        Me.rbStaff.TabIndex = 9
-        Me.rbStaff.TabStop = True
-        Me.rbStaff.Text = "Staff"
-        Me.rbStaff.UseVisualStyleBackColor = True
-        '
-        'btnBack
-        '
-        Me.btnBack.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBack.Location = New System.Drawing.Point(19, 21)
-        Me.btnBack.Name = "btnBack"
-        Me.btnBack.Size = New System.Drawing.Size(75, 23)
-        Me.btnBack.TabIndex = 6
-        Me.btnBack.Text = "Back"
-        Me.btnBack.UseVisualStyleBackColor = True
-        '
-        'cmbCarType
-        '
-        Me.cmbCarType.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbCarType.FormattingEnabled = True
-        Me.cmbCarType.Items.AddRange(New Object() {"IRIZ", "PREVE/SUPRIMA", "PERSONA", "SAGA", "S70", "X50", "X70", "X90", "ALZA", "ARUZ", "ATIVA", "AXIA", "BEZZA", "MYVI"})
-        Me.cmbCarType.Location = New System.Drawing.Point(511, 123)
-        Me.cmbCarType.Name = "cmbCarType"
-        Me.cmbCarType.Size = New System.Drawing.Size(121, 25)
-        Me.cmbCarType.TabIndex = 10
-        '
-        'txtPhone
-        '
-        Me.txtPhone.Location = New System.Drawing.Point(299, 181)
-        Me.txtPhone.Name = "txtPhone"
-        Me.txtPhone.Size = New System.Drawing.Size(140, 22)
-        Me.txtPhone.TabIndex = 11
-        '
-        'txtPlate
-        '
-        Me.txtPlate.Location = New System.Drawing.Point(511, 181)
-        Me.txtPlate.Name = "txtPlate"
-        Me.txtPlate.Size = New System.Drawing.Size(121, 22)
-        Me.txtPlate.TabIndex = 12
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(299, 158)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(110, 19)
-        Me.Label1.TabIndex = 13
-        Me.Label1.Text = "Phone Number"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(511, 158)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(106, 17)
-        Me.Label2.TabIndex = 14
-        Me.Label2.Text = "Plate Number"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(511, 92)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(32, 19)
-        Me.Label3.TabIndex = 15
-        Me.Label3.Text = "Car"
         '
         'registerForm
         '
