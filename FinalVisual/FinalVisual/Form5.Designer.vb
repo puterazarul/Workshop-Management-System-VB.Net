@@ -38,8 +38,10 @@ Partial Class Form5
         Me.Label6 = New System.Windows.Forms.Label()
         Me.btnUpdateStock = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -48,7 +50,7 @@ Partial Class Form5
         Me.Panel1.Controls.Add(Me.btnBack)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(799, 49)
         Me.Panel1.TabIndex = 2
@@ -56,7 +58,7 @@ Partial Class Form5
         'btnBack
         '
         Me.btnBack.Location = New System.Drawing.Point(98, 10)
-        Me.btnBack.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnBack.Margin = New System.Windows.Forms.Padding(2)
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(68, 28)
         Me.btnBack.TabIndex = 0
@@ -77,7 +79,7 @@ Partial Class Form5
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(205, 95)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 24
         Me.DataGridView1.Size = New System.Drawing.Size(535, 119)
@@ -96,7 +98,7 @@ Partial Class Form5
         'txtPartID
         '
         Me.txtPartID.Location = New System.Drawing.Point(109, 128)
-        Me.txtPartID.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtPartID.Margin = New System.Windows.Forms.Padding(2)
         Me.txtPartID.Name = "txtPartID"
         Me.txtPartID.Size = New System.Drawing.Size(76, 20)
         Me.txtPartID.TabIndex = 6
@@ -104,7 +106,7 @@ Partial Class Form5
         'txtPartName
         '
         Me.txtPartName.Location = New System.Drawing.Point(109, 162)
-        Me.txtPartName.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtPartName.Margin = New System.Windows.Forms.Padding(2)
         Me.txtPartName.Name = "txtPartName"
         Me.txtPartName.Size = New System.Drawing.Size(76, 20)
         Me.txtPartName.TabIndex = 7
@@ -112,7 +114,7 @@ Partial Class Form5
         'txtQuantity
         '
         Me.txtQuantity.Location = New System.Drawing.Point(109, 197)
-        Me.txtQuantity.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtQuantity.Margin = New System.Windows.Forms.Padding(2)
         Me.txtQuantity.Name = "txtQuantity"
         Me.txtQuantity.Size = New System.Drawing.Size(76, 20)
         Me.txtQuantity.TabIndex = 8
@@ -120,7 +122,7 @@ Partial Class Form5
         'txtPrice
         '
         Me.txtPrice.Location = New System.Drawing.Point(109, 230)
-        Me.txtPrice.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtPrice.Margin = New System.Windows.Forms.Padding(2)
         Me.txtPrice.Name = "txtPrice"
         Me.txtPrice.Size = New System.Drawing.Size(76, 20)
         Me.txtPrice.TabIndex = 9
@@ -128,7 +130,7 @@ Partial Class Form5
         'txtStatus
         '
         Me.txtStatus.Location = New System.Drawing.Point(109, 266)
-        Me.txtStatus.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtStatus.Margin = New System.Windows.Forms.Padding(2)
         Me.txtStatus.Name = "txtStatus"
         Me.txtStatus.Size = New System.Drawing.Size(76, 20)
         Me.txtStatus.TabIndex = 10
@@ -175,8 +177,8 @@ Partial Class Form5
         '
         'btnUpdateStock
         '
-        Me.btnUpdateStock.Location = New System.Drawing.Point(47, 311)
-        Me.btnUpdateStock.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnUpdateStock.Location = New System.Drawing.Point(37, 311)
+        Me.btnUpdateStock.Margin = New System.Windows.Forms.Padding(2)
         Me.btnUpdateStock.Name = "btnUpdateStock"
         Me.btnUpdateStock.Size = New System.Drawing.Size(60, 42)
         Me.btnUpdateStock.TabIndex = 15
@@ -185,13 +187,23 @@ Partial Class Form5
         '
         'btnClear
         '
-        Me.btnClear.Location = New System.Drawing.Point(138, 311)
-        Me.btnClear.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnClear.Location = New System.Drawing.Point(124, 311)
+        Me.btnClear.Margin = New System.Windows.Forms.Padding(2)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(61, 42)
         Me.btnClear.TabIndex = 16
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.FinalVisual.My.Resources.Resources.WhatsApp_Image_2026_07_08_at_12_22_12_PM
+        Me.PictureBox1.Location = New System.Drawing.Point(200, 43)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(599, 394)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 17
+        Me.PictureBox1.TabStop = False
         '
         'Form5
         '
@@ -213,11 +225,13 @@ Partial Class Form5
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form5"
         Me.Text = "Form5"
         Me.Panel1.ResumeLayout(False)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -238,4 +252,5 @@ Partial Class Form5
     Friend WithEvents Label6 As Label
     Friend WithEvents btnUpdateStock As Button
     Friend WithEvents btnClear As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

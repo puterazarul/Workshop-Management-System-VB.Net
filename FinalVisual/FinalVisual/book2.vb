@@ -10,9 +10,6 @@ Public Class book2
         SaveBooking()
     End Sub
 
-    '==========================
-    ' SUBFUNCTION: Calculate Price
-    '==========================
     Private Sub CalculatePrice()
 
         Dim total As Integer = 0

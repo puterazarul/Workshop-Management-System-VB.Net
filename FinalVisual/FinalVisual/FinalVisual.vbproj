@@ -283,6 +283,8 @@
     <Content Include="Booking.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\1-Car-Service-Workshop-Review.jpg" />
+    <None Include="Resources\WhatsApp Image 2026-07-08 at 12.22.12 PM.jpeg" />
     <Content Include="Workshop.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
