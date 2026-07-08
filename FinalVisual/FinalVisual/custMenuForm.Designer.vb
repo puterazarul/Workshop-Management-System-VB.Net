@@ -139,7 +139,7 @@ Partial Class custMenuForm
         Me.lblDateTime.BackColor = System.Drawing.Color.Transparent
         Me.lblDateTime.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDateTime.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.lblDateTime.Location = New System.Drawing.Point(170, 60)
+        Me.lblDateTime.Location = New System.Drawing.Point(130, 64)
         Me.lblDateTime.Name = "lblDateTime"
         Me.lblDateTime.Size = New System.Drawing.Size(422, 28)
         Me.lblDateTime.TabIndex = 4

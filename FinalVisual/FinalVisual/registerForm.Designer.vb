@@ -184,7 +184,7 @@ Partial Class registerForm
         'rbStaff
         '
         Me.rbStaff.AutoSize = True
-        Me.rbStaff.Location = New System.Drawing.Point(381, 306)
+        Me.rbStaff.Location = New System.Drawing.Point(404, 306)
         Me.rbStaff.Name = "rbStaff"
         Me.rbStaff.Size = New System.Drawing.Size(58, 21)
         Me.rbStaff.TabIndex = 9

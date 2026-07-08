@@ -2,31 +2,65 @@
 
 Public Class book2
 
-    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
-        CalculatePrice()
+    ' These variables hold the customer data coming from book1
+    Public CustomerName As String = ""
+    Public CustomerPhone As String = ""
+    Public CustomerPlate As String = ""
+    Public CustomerCarType As String = ""
+
+    ' 2. THIS IS THE MISSING LINK: It copies the data into your labels when book2 opens
+    Private Sub book2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        lblName.Text = Me.CustomerName
+        lblPhone.Text = Me.CustomerPhone
+        lblPlate.Text = Me.CustomerPlate
+        lblCarType.Text = Me.CustomerCarType
     End Sub
 
-    Private Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
-        SaveBooking()
-    End Sub
-
+    Public Property SelectedCar As String
+    Dim connString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\UserDB.accdb;"
     Private Sub CalculatePrice()
 
         Dim total As Integer = 0
 
-        If chkOil.Checked Then total += 80
-        If chkAlign.Checked Then total += 30
-        If chkCarwash.Checked Then total += 10
-        If chkBrake.Checked Then total += 50
-        If chkCoolant.Checked Then total += 60
-        If chkGas.Checked Then total += 40
-        If chkOBD.Checked Then total += 100
-        If chkTint.Checked Then total += 150
+        Select Case SelectedCar
+            Case "IRIZ", "MYVI", "AXIA"
+                ' hb service prices
+                If chkOil.Checked Then total += 150
+                If chkAlign.Checked Then total += 40
+                If chkCarwash.Checked Then total += 15
+                If chkBrake.Checked Then total += 200
+                If chkCoolant.Checked Then total += 100
+                If chkGas.Checked Then total += 10
+                If chkOBD.Checked Then total += 50
+                If chkTint.Checked Then total += 100
 
-        txtTotalPrice.Text = total.ToString()
+            Case "X70", "X90", "ARUZ", "ALZA", "X50", "X50"
+                ' suv/mpv service prices
+                If chkOil.Checked Then total += 200
+                If chkAlign.Checked Then total += 40
+                If chkCarwash.Checked Then total += 25
+                If chkBrake.Checked Then total += 400
+                If chkCoolant.Checked Then total += 100
+                If chkGas.Checked Then total += 10
+                If chkOBD.Checked Then total += 50
+                If chkTint.Checked Then total += 180
+
+            Case Else
+                ' Sedan service prices
+                If chkOil.Checked Then total += 200
+                If chkAlign.Checked Then total += 40
+                If chkCarwash.Checked Then total += 20
+                If chkBrake.Checked Then total += 400
+                If chkCoolant.Checked Then total += 100
+                If chkGas.Checked Then total += 10
+                If chkOBD.Checked Then total += 50
+                If chkTint.Checked Then total += 150
+
+        End Select
+
+        txtTotalPrice.Text = "RM " & total.ToString("N2")
 
     End Sub
-
 
     Private Sub SaveBooking()
 
@@ -66,6 +100,13 @@ VALUES
 
     End Sub
 
+    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+        CalculatePrice()
+    End Sub
+    Private Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
+        SaveBooking()
+    End Sub
+
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Form1.Show()
         Me.Close()
@@ -80,7 +121,4 @@ VALUES
         End If
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-
-    End Sub
 End Class

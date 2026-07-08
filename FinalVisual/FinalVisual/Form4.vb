@@ -61,15 +61,6 @@ Public Class Form4
 
     End Sub
 
-    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        menuForm.Show()
-        Me.Close()
-    End Sub
-
-    Private Sub txtSearchPlate_TextChanged(sender As Object, e As EventArgs) Handles txtSearchPlate.TextChanged
-
-    End Sub
-
     Private Sub btnComplete_Click(sender As Object, e As EventArgs) Handles btnComplete.Click
         If txtSearchPlate.Text.Trim() = "" Then
             MessageBox.Show("Please enter the Plate Number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
@@ -139,5 +130,8 @@ Public Class Form4
         LoadAllBookings()
     End Sub
 
-
+    Private Sub mnuBack_Click(sender As Object, e As EventArgs) Handles mnuBack.Click
+        menuForm.Show()
+        Me.Hide()
+    End Sub
 End Class

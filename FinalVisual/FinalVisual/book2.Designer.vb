@@ -149,7 +149,7 @@ Partial Class book2
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(120, 49)
         Me.btnBack.TabIndex = 17
-        Me.btnBack.Text = "Back"
+        Me.btnBack.Text = "User Menu"
         Me.btnBack.UseVisualStyleBackColor = False
         '
         'btnExit

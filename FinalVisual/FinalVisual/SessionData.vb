@@ -1,20 +1,22 @@
 ﻿Module SessionData
-    ' Stores the currently logged-in username
-    Public CurrentUsername As String = ""
 
-    ' Stores the role of the user ("Customer" or "Staff")
-    Public CurrentRole As String = ""
+    ' Store logged-in user details
+    Public CurrentUsername As String
+        Public CurrentRole As String
+        Public CurrentPlate As String
 
-    ' Helper method to clear session (use on logout)
-    Public Sub ClearSession()
-        CurrentUsername = ""
-        CurrentRole = ""
-    End Sub
+        ' Optional helper methods
+        Public Sub ClearSession()
+            CurrentUsername = Nothing
+            CurrentRole = Nothing
+            CurrentPlate = Nothing
+        End Sub
 
-    ' Helper method to check if user is logged in
-    Public Function IsLoggedIn() As Boolean
-        Return Not String.IsNullOrEmpty(CurrentUsername)
-    End Function
+        Public Function IsLoggedIn() As Boolean
+            Return Not String.IsNullOrEmpty(CurrentUsername)
+        End Function
+
+
 
 
 End Module
