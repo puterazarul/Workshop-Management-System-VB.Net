@@ -86,13 +86,8 @@ Public Class Form5
 
     End Sub
 
-    Private Sub btnBack_Click(sender As Object, e As EventArgs)
-        menuForm.Show()
-        Me.Close()
-    End Sub
-
     Private Sub mnuHome_Click(sender As Object, e As EventArgs) Handles mnuHome.Click
-        custMenuForm.Show()
+        menuForm.Show()
         Me.Hide()
     End Sub
 
