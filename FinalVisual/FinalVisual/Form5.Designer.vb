@@ -187,7 +187,7 @@ Partial Class Form5
         '
         'btnClear
         '
-        Me.btnClear.Location = New System.Drawing.Point(124, 311)
+        Me.btnClear.Location = New System.Drawing.Point(109, 311)
         Me.btnClear.Margin = New System.Windows.Forms.Padding(2)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(61, 42)
