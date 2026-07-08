@@ -79,4 +79,7 @@ Public Class registerForm
         Me.Close()
     End Sub
 
+    Private Sub txtCustFullName_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
 End Class
