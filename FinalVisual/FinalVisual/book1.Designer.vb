@@ -26,6 +26,7 @@ Partial Class book1
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.mnuBack = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuUserMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtName = New System.Windows.Forms.TextBox()
@@ -58,7 +59,7 @@ Partial Class book1
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.Black
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuBack})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuBack, Me.mnuUserMenu})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(847, 36)
@@ -73,6 +74,15 @@ Partial Class book1
         Me.mnuBack.Name = "mnuBack"
         Me.mnuBack.Size = New System.Drawing.Size(84, 32)
         Me.mnuBack.Text = "HOME"
+        '
+        'mnuUserMenu
+        '
+        Me.mnuUserMenu.BackColor = System.Drawing.Color.Transparent
+        Me.mnuUserMenu.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mnuUserMenu.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.mnuUserMenu.Name = "mnuUserMenu"
+        Me.mnuUserMenu.Size = New System.Drawing.Size(139, 32)
+        Me.mnuUserMenu.Text = "USER MENU"
         '
         'lblTitle
         '
@@ -252,4 +262,5 @@ Partial Class book1
     Friend WithEvents Label5 As Label
     Friend WithEvents cmbCarType As ComboBox
     Friend WithEvents lnklblAccount As LinkLabel
+    Friend WithEvents mnuUserMenu As ToolStripMenuItem
 End Class

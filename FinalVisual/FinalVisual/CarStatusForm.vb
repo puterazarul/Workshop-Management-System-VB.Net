@@ -1,10 +1,5 @@
 ﻿Imports System.Data.OleDb
 Public Class CarStatusForm
-
-    Private Sub CarStatusForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LoadCustomerBookings()
-    End Sub
-
     Private Sub LoadCustomerBookings()
         Dim connString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\UserDB.accdb;"
 
@@ -35,6 +30,10 @@ Public Class CarStatusForm
                 End Try
             End Using
         End Using
+    End Sub
+
+    Private Sub CarStatusForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LoadCustomerBookings()
     End Sub
 
     Private Sub mnuHome_Click(sender As Object, e As EventArgs) Handles mnuHome.Click

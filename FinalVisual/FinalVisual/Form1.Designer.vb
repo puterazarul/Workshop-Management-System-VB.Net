@@ -122,6 +122,7 @@ Partial Class Form1
         'mnuMenuExit
         '
         Me.mnuMenuExit.Name = "mnuMenuExit"
+        Me.mnuMenuExit.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.E), System.Windows.Forms.Keys)
         Me.mnuMenuExit.Size = New System.Drawing.Size(216, 30)
         Me.mnuMenuExit.Text = "EXIT"
         '

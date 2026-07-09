@@ -74,7 +74,7 @@ Partial Class custMenuForm
         '
         Me.mnuFileHome.Name = "mnuFileHome"
         Me.mnuFileHome.Size = New System.Drawing.Size(265, 32)
-        Me.mnuFileHome.Text = "HOME"
+        Me.mnuFileHome.Text = "LOGOUT"
         '
         'mnuFileSwitch
         '

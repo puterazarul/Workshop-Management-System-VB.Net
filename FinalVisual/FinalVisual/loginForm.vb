@@ -1,14 +1,14 @@
 ﻿Imports System.Data.OleDb
 
 Public Class loginForm
-
     Dim connString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\UserDB.accdb;"
 
+    Private Sub ClearInput()
 
-    Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
-        LoginUser()
+        txtUsername.Clear()
+        txtPassword.Clear()
+
     End Sub
-
 
     Private Sub LoginUser()
 
@@ -78,6 +78,10 @@ Public Class loginForm
 
     End Sub
 
+    Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
+        LoginUser()
+    End Sub
+
     Private Sub OpenMenu(tableName As String)
 
         If tableName = "tblCustomer" Then
@@ -95,15 +99,6 @@ Public Class loginForm
         Me.Close()
 
     End Sub
-
-
-    Private Sub ClearInput()
-
-        txtUsername.Clear()
-        txtPassword.Clear()
-
-    End Sub
-
 
     Private Sub lnkRegister_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lnkRegister.LinkClicked
 
@@ -127,4 +122,5 @@ Public Class loginForm
         Me.Close()
 
     End Sub
+
 End Class

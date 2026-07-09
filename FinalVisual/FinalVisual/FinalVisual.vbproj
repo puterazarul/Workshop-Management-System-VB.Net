@@ -200,6 +200,9 @@
     <Compile Include="SessionData.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="aboutForm.resx">
+      <DependentUpon>aboutForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="book1.resx">
       <DependentUpon>book1.vb</DependentUpon>
     </EmbeddedResource>

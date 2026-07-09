@@ -71,14 +71,14 @@ Partial Class CarStatusForm
         Me.mnuHome.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.mnuHome.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.mnuHome.Name = "mnuHome"
-        Me.mnuHome.Size = New System.Drawing.Size(168, 36)
-        Me.mnuHome.Text = "HOME"
+        Me.mnuHome.Size = New System.Drawing.Size(216, 36)
+        Me.mnuHome.Text = "LOGOUT"
         '
         'mnuBack
         '
         Me.mnuBack.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.mnuBack.Name = "mnuBack"
-        Me.mnuBack.Size = New System.Drawing.Size(168, 36)
+        Me.mnuBack.Size = New System.Drawing.Size(216, 36)
         Me.mnuBack.Text = "BACK"
         '
         'Panel2

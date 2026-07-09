@@ -91,7 +91,7 @@ Partial Class menuForm
         '
         Me.mnuHome.Name = "mnuHome"
         Me.mnuHome.Size = New System.Drawing.Size(265, 32)
-        Me.mnuHome.Text = "HOME"
+        Me.mnuHome.Text = "LOGOUT"
         '
         'mnuSwitchAcc
         '

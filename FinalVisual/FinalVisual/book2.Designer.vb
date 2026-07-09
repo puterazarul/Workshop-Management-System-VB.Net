@@ -84,7 +84,7 @@ Partial Class book2
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox1.Size = New System.Drawing.Size(489, 430)
+        Me.GroupBox1.Size = New System.Drawing.Size(489, 459)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Select Service"
@@ -134,7 +134,7 @@ Partial Class book2
         Me.btnCalculate.Location = New System.Drawing.Point(124, 374)
         Me.btnCalculate.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCalculate.Name = "btnCalculate"
-        Me.btnCalculate.Size = New System.Drawing.Size(120, 49)
+        Me.btnCalculate.Size = New System.Drawing.Size(120, 77)
         Me.btnCalculate.TabIndex = 18
         Me.btnCalculate.Text = "Calculate"
         Me.btnCalculate.UseVisualStyleBackColor = False
@@ -147,7 +147,7 @@ Partial Class book2
         Me.btnBack.Location = New System.Drawing.Point(243, 374)
         Me.btnBack.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBack.Name = "btnBack"
-        Me.btnBack.Size = New System.Drawing.Size(120, 49)
+        Me.btnBack.Size = New System.Drawing.Size(126, 77)
         Me.btnBack.TabIndex = 17
         Me.btnBack.Text = "User Menu"
         Me.btnBack.UseVisualStyleBackColor = False
@@ -160,7 +160,7 @@ Partial Class book2
         Me.btnExit.Location = New System.Drawing.Point(361, 373)
         Me.btnExit.Margin = New System.Windows.Forms.Padding(4)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(120, 49)
+        Me.btnExit.Size = New System.Drawing.Size(120, 78)
         Me.btnExit.TabIndex = 16
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = False
@@ -174,7 +174,7 @@ Partial Class book2
         Me.btnConfirm.Location = New System.Drawing.Point(5, 374)
         Me.btnConfirm.Margin = New System.Windows.Forms.Padding(4)
         Me.btnConfirm.Name = "btnConfirm"
-        Me.btnConfirm.Size = New System.Drawing.Size(120, 49)
+        Me.btnConfirm.Size = New System.Drawing.Size(120, 77)
         Me.btnConfirm.TabIndex = 15
         Me.btnConfirm.Text = "Confirm Booking"
         Me.btnConfirm.UseVisualStyleBackColor = False
