@@ -24,10 +24,19 @@ Database: Microsoft Access (.accdb / OLEDB Engine)
 
 IDE: Microsoft Visual Studio 2017
 
- 📸 Application Showcase
+ ## 📸 Application Showcase
 
-| ![Main Menu](docs/menuws.png) | ![Login](docs/loginws.png) | ![Booking Customer](docs/bookws.png) |
+<table>
+  <tr>
+    <td><img src="docs/menuws.png" alt="Main Menu"></td>
+    <td><img src="docs/loginws.png" alt="Login"></td>
+    <td><img src="docs/bookws.png" alt="Booking Customer"></td>
+  </tr>
+</table>
 
-<br>
-
-| ![Inventory Tracking](docs/inventoryws.png) | ![Staff Job Track](docs/bookstaffws.png) |
+<table>
+  <tr>
+    <td><img src="docs/inventoryws.png" alt="Inventory Tracking"></td>
+    <td><img src="docs/bookstaffws.png" alt="Staff Job Track"></td>
+  </tr>
+</table>
