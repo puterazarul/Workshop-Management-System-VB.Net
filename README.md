@@ -23,3 +23,11 @@ Framework: .NET Framework / Windows Forms (WinForms)
 Database: Microsoft Access (.accdb / OLEDB Engine)
 
 IDE: Microsoft Visual Studio 2017
+
+ 📸 Application Showcase
+
+| ![Main Menu](docs/menuws.png) | ![Login](docs/loginws.png) | ![Booking Customer](docs/bookws.png) |
+
+<br>
+
+| ![Inventory Tracking](docs/inventoryws.png) | ![Staff Job Track](docs/bookstaffws.png) |
