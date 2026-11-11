@@ -121,9 +121,9 @@ Partial Class book1
         Me.Label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label2.Location = New System.Drawing.Point(536, 86)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(85, 17)
+        Me.Label2.Size = New System.Drawing.Size(54, 17)
         Me.Label2.TabIndex = 4
-        Me.Label2.Text = "Full Name "
+        Me.Label2.Text = "Name "
         '
         'Label3
         '

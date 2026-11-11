@@ -29,12 +29,8 @@ Partial Class Form5
         Me.dgvBooking = New System.Windows.Forms.DataGridView()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtPartID = New System.Windows.Forms.TextBox()
-        Me.txtPartName = New System.Windows.Forms.TextBox()
         Me.txtQuantity = New System.Windows.Forms.TextBox()
-        Me.txtPrice = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.btnUpdateStock = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -111,14 +107,6 @@ Partial Class Form5
         Me.txtPartID.Size = New System.Drawing.Size(100, 22)
         Me.txtPartID.TabIndex = 6
         '
-        'txtPartName
-        '
-        Me.txtPartName.Location = New System.Drawing.Point(145, 199)
-        Me.txtPartName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtPartName.Name = "txtPartName"
-        Me.txtPartName.Size = New System.Drawing.Size(100, 22)
-        Me.txtPartName.TabIndex = 7
-        '
         'txtQuantity
         '
         Me.txtQuantity.Location = New System.Drawing.Point(145, 242)
@@ -126,23 +114,6 @@ Partial Class Form5
         Me.txtQuantity.Name = "txtQuantity"
         Me.txtQuantity.Size = New System.Drawing.Size(100, 22)
         Me.txtQuantity.TabIndex = 8
-        '
-        'txtPrice
-        '
-        Me.txtPrice.Location = New System.Drawing.Point(145, 283)
-        Me.txtPrice.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtPrice.Name = "txtPrice"
-        Me.txtPrice.Size = New System.Drawing.Size(100, 22)
-        Me.txtPrice.TabIndex = 9
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(48, 203)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(83, 17)
-        Me.Label3.TabIndex = 11
-        Me.Label3.Text = "Part Name :"
         '
         'Label4
         '
@@ -152,15 +123,6 @@ Partial Class Form5
         Me.Label4.Size = New System.Drawing.Size(61, 17)
         Me.Label4.TabIndex = 12
         Me.Label4.Text = "Quantity"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(51, 287)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(40, 17)
-        Me.Label5.TabIndex = 13
-        Me.Label5.Text = "Price"
         '
         'btnUpdateStock
         '
@@ -211,12 +173,8 @@ Partial Class Form5
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnUpdateStock)
-        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.txtPrice)
         Me.Controls.Add(Me.txtQuantity)
-        Me.Controls.Add(Me.txtPartName)
         Me.Controls.Add(Me.txtPartID)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.dgvBooking)
@@ -242,12 +200,8 @@ Partial Class Form5
     Friend WithEvents dgvBooking As DataGridView
     Friend WithEvents Label2 As Label
     Friend WithEvents txtPartID As TextBox
-    Friend WithEvents txtPartName As TextBox
     Friend WithEvents txtQuantity As TextBox
-    Friend WithEvents txtPrice As TextBox
-    Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
     Friend WithEvents btnUpdateStock As Button
     Friend WithEvents btnClear As Button
     Friend WithEvents PictureBox1 As PictureBox

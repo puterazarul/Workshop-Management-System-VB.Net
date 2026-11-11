@@ -43,9 +43,9 @@ Public Class Form5
 
                     ' Clear old values and map parameters in EXACT left-to-right order to match the 3 question marks:
                     cmd.Parameters.Clear()
-                    cmd.Parameters.AddWithValue("?", CInt(txtQuantity.Text)) ' 1st ? -> Adds to [Quantity]
-                    cmd.Parameters.AddWithValue("?", autoStatus)            ' 2nd ? -> Changes [Status]
-                    cmd.Parameters.AddWithValue("?", txtPartID.Text)         ' 3rd ? -> Matches WHERE [PartID]
+                    cmd.Parameters.AddWithValue("?", CInt(txtQuantity.Text))
+                    cmd.Parameters.AddWithValue("?", autoStatus)
+                    cmd.Parameters.AddWithValue("?", txtPartID.Text)
 
                     localCon.Open()
                     Dim rows As Integer = cmd.ExecuteNonQuery()
@@ -71,9 +71,9 @@ Public Class Form5
     Sub ClearData()
 
         txtPartID.Clear()
-        txtPartName.Clear()
+
         txtQuantity.Clear()
-        txtPrice.Clear()
+
 
 
         txtPartID.Focus()
